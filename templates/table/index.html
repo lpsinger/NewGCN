@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 
 <html lang="en">
@@ -8,9 +9,9 @@
 
 <!--===============================================================================================-->
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="../../static/testapp/vendor/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="https://takdg123.github.io/NewGCN/static/testapp/vendor/animate/animate.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="../../static/testapp/vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="https://takdg123.github.io/NewGCN/static/testapp/vendor/select2/select2.min.css">
 <!--===============================================================================================-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -267,17 +268,19 @@
 
 
 
-
+    <link rel="stylesheet" type="text/css" href="https://takdg123.github.io/NewGCN/static/testapp/vendor/animate/animate.css">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="https://takdg123.github.io/NewGCN/static/testapp/vendor/select2/select2.min.css">
 <!--===============================================================================================-->	
-	<script type="text/javascript", src="{% static 'testapp/vendor/jquery/jquery-3.2.1.min.js' %}"></script>
+	<script type="text/javascript", src="https://takdg123.github.io/NewGCN/static/testapp/vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
-	<script type="text/javascript", src="{% static 'testapp/vendor/bootstrap/js/popper.js' %}"></script>
-	<script type="text/javascript", src="{% static 'testapp/vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+	<script type="text/javascript", src="https://takdg123.github.io/NewGCN/static/testapp/vendor/bootstrap/js/popper.js"></script>
+	<script type="text/javascript", src="https://takdg123.github.io/NewGCN/static/testapp/vendor/bootstrap/js/bootstrap.min.js"></script>
 <!--===============================================================================================-->
-	<script type="text/javascript", src="{% static 'testapp/vendor/select2/select2.min.js' %}"></script>
+	<script type="text/javascript", src="https://takdg123.github.io/NewGCN/static/testapp/vendor/select2/select2.min.js"></script>
 <!--===============================================================================================-->
-	<script type="text/javascript", src="{% static 'testapp/js/main.js' %}"></script>
-	<script type="text/javascript", src="{% static 'testapp/js/sub.js' %}"></script>
+	<script type="text/javascript", src="https://takdg123.github.io/NewGCN/static/testapp/js/main.js"></script>
+	<script type="text/javascript", src="https://takdg123.github.io/NewGCN/static/testapp/js/sub.js"></script>
 
 <!--===============================================================================================-->
 
@@ -303,9 +306,11 @@ function sortingNumber( a , b ){
 } 
 
 
+/* changeForSorting() :  */ 
 
 function changeForSorting( first , second ){  
 
+        // 문자열의 복사본 만들기. 
         var a = first.toString().replace( /[\s\xA0]+/g , " " ); 
         var b = second.toString().replace( /[\s\xA0]+/g , " " ); 
 
@@ -313,14 +318,14 @@ function changeForSorting( first , second ){
 
         if ( a.search( /\d/ ) < 0 || b.search( /\d/ ) < 0 || a.length == 0 || b.length == 0 ) return change; 
 
-        var regExp = /(\d),(\d)/g; 
+        var regExp = /(\d),(\d)/g;  
 
         a = a.replace( regExp , "$1" + "$2" ); 
         b = b.replace( regExp , "$1" + "$2" ); 
 
         var unit = 0; 
         var aNb = a + " " + b; 
-        var numbers = aNb.match( /\d+/g ); 
+        var numbers = aNb.match( /\d+/g );
 
         for ( var x = 0; x < numbers.length; x++ ){ 
 
@@ -328,7 +333,7 @@ function changeForSorting( first , second ){
                 if ( unit < length ) unit = length; 
         } 
 
-        var addZero = function( string ){ 
+        var addZero = function( string ){
 
                 var match = string.match( /^0+/ ); 
 
@@ -404,7 +409,7 @@ function replacement( parent ){
                         while ( parent.hasChildNodes() ) parent.removeChild( parent.firstChild ); 
                         for ( var x = 0; x < array.length; x++ ) parent.appendChild( array[ x ] ); 
                 }, 
-                ascending : function( index ){ // 오름차순 
+                ascending : function( index ){ 
                         this.checkIndex( index ); 
                         var _self = this; 
                         var order = this.order; 
@@ -416,7 +421,7 @@ function replacement( parent ){
                         this.array.sort( ascending ); 
                         this.setChildren(); 
                 }, 
-                descending : function( index ){ // 내림차순
+                descending : function( index ){ 
                         this.checkIndex( index ); 
                         var _self = this; 
                         var order = this.order; 
@@ -433,7 +438,7 @@ function replacement( parent ){
 } 
 
 function getTextByClone( tag ){  
-        var clone = tag.cloneNode( true ); 
+        var clone = tag.cloneNode( true );
         var br = clone.getElementsByTagName( "br" ); 
         while ( br[0] ){ 
                 var blank = document.createTextNode( " " ); 
