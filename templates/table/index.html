@@ -1,4 +1,3 @@
-{% load static %}
 <!DOCTYPE html>
 
 <html lang="en">
@@ -9,9 +8,9 @@
 
 <!--===============================================================================================-->
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="{% static 'testapp/vendor/animate/animate.css' %}">
+	<link rel="stylesheet" type="text/css" href="../../static/testapp/vendor/animate/animate.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="{% static 'testapp/vendor/select2/select2.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="../../static/testapp/vendor/select2/select2.min.css">
 <!--===============================================================================================-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -292,7 +291,6 @@ function sortingNumber( a , b ){
 
         if ( typeof a == "number" && typeof b == "number" ) return a - b; 
 
-        // 천단위 쉼표와 공백문자만 삭제하기.  
         var a = ( a + "" ).replace( /[,\s\xA0]+/g , "" ); 
         var b = ( b + "" ).replace( /[,\s\xA0]+/g , "" ); 
 
@@ -305,11 +303,9 @@ function sortingNumber( a , b ){
 } 
 
 
-/* changeForSorting() : 문자열 바꾸기. */ 
 
 function changeForSorting( first , second ){  
 
-        // 문자열의 복사본 만들기. 
         var a = first.toString().replace( /[\s\xA0]+/g , " " ); 
         var b = second.toString().replace( /[\s\xA0]+/g , " " ); 
 
@@ -317,14 +313,14 @@ function changeForSorting( first , second ){
 
         if ( a.search( /\d/ ) < 0 || b.search( /\d/ ) < 0 || a.length == 0 || b.length == 0 ) return change; 
 
-        var regExp = /(\d),(\d)/g; // 천단위 쉼표를 찾기 위한 정규식. 
+        var regExp = /(\d),(\d)/g; 
 
         a = a.replace( regExp , "$1" + "$2" ); 
         b = b.replace( regExp , "$1" + "$2" ); 
 
         var unit = 0; 
         var aNb = a + " " + b; 
-        var numbers = aNb.match( /\d+/g ); // 문자열에 들어있는 숫자 찾기 
+        var numbers = aNb.match( /\d+/g ); 
 
         for ( var x = 0; x < numbers.length; x++ ){ 
 
@@ -332,7 +328,7 @@ function changeForSorting( first , second ){
                 if ( unit < length ) unit = length; 
         } 
 
-        var addZero = function( string ){ // 숫자들의 단위 맞추기 
+        var addZero = function( string ){ 
 
                 var match = string.match( /^0+/ ); 
 
@@ -437,7 +433,7 @@ function replacement( parent ){
 } 
 
 function getTextByClone( tag ){  
-        var clone = tag.cloneNode( true ); // 태그의 복사본 만들기. 
+        var clone = tag.cloneNode( true ); 
         var br = clone.getElementsByTagName( "br" ); 
         while ( br[0] ){ 
                 var blank = document.createTextNode( " " ); 
