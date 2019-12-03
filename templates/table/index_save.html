@@ -1,0 +1,295 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>New GCN</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--===============================================================================================-->
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'testapp/vendor/animate/animate.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'testapp/vendor/select2/select2.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+    <link rel="stylesheet" type="text/css" href="{% static 'testapp/css/util.css' %}?{% now "U" %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'testapp/css/main.css' %}?{% now "U" %}">
+    
+</head>
+<body onload="reverseTD (1)">	
+	<div class="limiter">
+		<div class="wrap-table100">
+			<div class="table100 ver4">
+                <h1 style="font-family: 'Arial Black'; font-size: 40pt; padding-bottom: 20pt;"> GCN Circular at First Glance </h1>
+                <h1 style="font-family: 'Arial Black'; font-size: 10pt; padding-bottom: 30pt;"><a href="https://gcn.gsfc.nasa.gov/gcn3_archive.html" style="color:#808080" target="_blank">Link to GCN circular</a>
+				<table id ="NewGCN">
+					<thead>
+						<tr class="row100 head">
+							<th class="cell100 evt">Event Name</th>
+							<th class="cell100 t0">Trigger Time</th>
+							<th class="cell100 ra">R.A.</th>
+							<th class="cell100 dec">Dec.</th>
+							<th class="cell100 z">Redshift</th>
+							<th class="cell100 tel">Telescopes/observatories</th>
+							<th class="cell100 mw">Wavelength</th>
+							<th class="cell100 mm">Messenger</th>
+						</tr>
+					</thead>
+					<tbody>
+<!--newevt-->
+						<tr class="row100 body GRB 191106A">
+							<td class="cell100 evt"><a href="https://gcn.gsfc.nasa.gov/other/191106A.gcn3" style="color:#808080" target="_blank">GRB 191106A</a></td>
+							<td class="cell100 t0">2019-11-06 14:15:23</td>
+							<td class="cell100 ra"><div data-toggle="tooltip" title="17:57:19.92" data-placement="bottom" err="0.03833333333333333">269.333</div></td>
+							<td class="cell100 dec"><div data-toggle="tooltip" title="3:4:8.16" data-placement="bottom">46.034</div></td>
+							<td class="cell100 z"></td>
+							<td class="cell100 tel"><a href="https://gcn.gsfc.nasa.gov/gcn3/26177.gcn3" target="_blank"><div class="box_tel_on">Swift/BAT</div></a><a href="https://gcn.gsfc.nasa.gov/gcn3/26177.gcn3" target="_blank"><div class="box_tel_on">Swift/XRT</div></a><a href="https://gcn.gsfc.nasa.gov/gcn3/26177.gcn3" target="_blank"><div class="box_tel_off">Swift/UVOT</div></a><a href="https://gcn.gsfc.nasa.gov/gcn3/26178.gcn3" target="_blank"><div class="box_tel_off">MASTER</div></a><a href="https://gcn.gsfc.nasa.gov/gcn3/26179.gcn3" target="_blank"><div class="box_tel_off">BOOTES-4/MET</div></a><a href="https://gcn.gsfc.nasa.gov/gcn3/26180.gcn3" target="_blank"><div class="box_tel_off">Mondy</div></a><a href="https://gcn.gsfc.nasa.gov/gcn3/26191.gcn3" target="_blank"><div class="box_tel_off">NOT</div></a><a href="https://gcn.gsfc.nasa.gov/gcn3/26201.gcn3" target="_blank"><div class="box_tel_on">AstroSat/CZTI</div></a></td>
+							<td class="cell100 mw"><div class="box_off">radio</div><div class="box_off">optical</div><div class="box_2">X-ray</div><div class="box_off">γ-ray</div><div class="box_off">HE</div><div class="box_off">VHE</div></td>
+							<td class="cell100 mm"><div class="box_on">EM</div><div class="box_off">GW</div><div class="box_off">ν</div></td>
+						</tr>
+
+						<tr class="row100 body GRB 191117B">
+							<td class="cell100 evt"><a href="https://gcn.gsfc.nasa.gov/other/191117B.gcn3" style="color:#808080" target="_blank">GRB 191117B</a></td>
+							<td class="cell100 t0">2019-11-17 15:17:38</td>
+							<td class="cell100 ra"><div data-toggle="tooltip" title="10:24:24.00" data-placement="bottom" err="444.0">156.1</div></td>
+							<td class="cell100 dec"><div data-toggle="tooltip" title="0:46:48.00" data-placement="bottom">11.7</div></td>
+							<td class="cell100 z"></td>
+							<td class="cell100 tel"><a href="https://gcn.gsfc.nasa.gov/gcn3/26255.gcn3" target="_blank"><div class="box_tel_on">Fermi/GBM</div></a></td>
+							<td class="cell100 mw"><div class="box_off">radio</div><div class="box_off">optical</div><div class="box_off">X-ray</div><div class="box_3">γ-ray</div><div class="box_off">HE</div><div class="box_off">VHE</div></td>
+							<td class="cell100 mm"><div class="box_on">EM</div><div class="box_off">GW</div><div class="box_off">ν</div></td>
+						</tr>
+						
+						<tr class="row100 body GRB 190114C">
+							<td class="cell100 evt"><a href="https://gcn.gsfc.nasa.gov/other/190114C.gcn3" style="color:#808080" target="_blank">GRB 190114C</a></td>
+							<td class="cell100 t0">2019-01-14 20:57:03</td>
+							<td class="cell100 ra"><div data-toggle="tooltip" title="03:38:01.16" data-placement="bottom" err="0.007">54.505</div></td>
+							<td class="cell100 dec"><div data-toggle="tooltip" title="-26:56:46.9" data-placement="bottom">-26.946</div></td>
+							<td class="cell100 z">0.4245</td>
+							<td class="cell100 tel"><div class="box_tel_on">MAGIC</div><div class="box_tel_on">Fermi/GBM</div><div class="box_tel_on">Fermi/LAT</div><div class="box_tel_on">Swift/BAT</div><div class="box_tel_on">Swift/XRT</div><div class="box_tel_on">......</div></td>
+							<td class="cell100 mw"><div class="box_0">radio</div><div class="box_1">optical</div><div class="box_2">X-ray</div><div class="box_3">&gamma;-ray</div><div class="box_4">HE</div><div class="box_5">VHE</div></td>
+							<td class="cell100 mm"><div class="box_on">EM</div><div class="box_off">GW</div><div class="box_off">&nu;</div></td>
+						</tr>
+						<tr class="row100 body G298048">
+							<td class="cell100 evt"><a href="https://gcn.gsfc.nasa.gov/other/G298048.gcn3" style="color:#808080" target="_blank">GW170817</a></td>
+							<td class="cell100 t0">2017-08-17 12:41:04</td>
+							<td class="cell100 ra"><div data-toggle="tooltip" title="13:09:48.08" data-placement="bottom" err="0.000"> 197.450</div></td>
+							<td class="cell100 dec"><div data-toggle="tooltip" title="-23:22:53.2" data-placement="bottom">-23.381</div></td>
+							<td class="cell100 z">0.0099</td>
+							<td class="cell100 tel"><div class="box_tel_on">LIGO</div><div class="box_tel_on">Fermi/GBM</div><div class="box_tel_on">INTEGRAL</div><div class="box_tel_on">......</div></td>
+							<td class="cell100 mw"><div class="box_0">radio</div><div class="box_1">optical</div><div class="box_2">X-ray</div><div class="box_3">&gamma;-ray</div><div class="box_off">HE</div><div class="box_off">VHE</div></td>
+							<td class="cell100 mm"><div class="box_on">EM</div><div class="box_on">GW</div><div class="box_off">&nu;</div></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+
+
+
+
+<!--===============================================================================================-->	
+	<script type="text/javascript", src="{% static 'testapp/vendor/jquery/jquery-3.2.1.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript", src="{% static 'testapp/vendor/bootstrap/js/popper.js' %}"></script>
+	<script type="text/javascript", src="{% static 'testapp/vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript", src="{% static 'testapp/vendor/select2/select2.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript", src="{% static 'testapp/js/main.js' %}"></script>
+	<script type="text/javascript", src="{% static 'testapp/js/sub.js' %}"></script>
+
+<!--===============================================================================================-->
+
+
+<script type="text/javascript">
+var myTable = document.getElementById( "NewGCN" ); 
+var replace = replacement( myTable ); 
+function sortTD( index ){    replace.ascending( index );    } 
+function reverseTD( index ){    replace.descending( index );    } 
+function sortingNumber( a , b ){  
+
+        if ( typeof a == "number" && typeof b == "number" ) return a - b; 
+
+        // 천단위 쉼표와 공백문자만 삭제하기.  
+        var a = ( a + "" ).replace( /[,\s\xA0]+/g , "" ); 
+        var b = ( b + "" ).replace( /[,\s\xA0]+/g , "" ); 
+
+        var numA = parseFloat( a ) + ""; 
+        var numB = parseFloat( b ) + ""; 
+
+        if ( numA == "NaN" || numB == "NaN" || a != numA || b != numB ) return false; 
+
+        return parseFloat( a ) - parseFloat( b ); 
+} 
+
+
+/* changeForSorting() : 문자열 바꾸기. */ 
+
+function changeForSorting( first , second ){  
+
+        // 문자열의 복사본 만들기. 
+        var a = first.toString().replace( /[\s\xA0]+/g , " " ); 
+        var b = second.toString().replace( /[\s\xA0]+/g , " " ); 
+
+        var change = { first : a, second : b }; 
+
+        if ( a.search( /\d/ ) < 0 || b.search( /\d/ ) < 0 || a.length == 0 || b.length == 0 ) return change; 
+
+        var regExp = /(\d),(\d)/g; // 천단위 쉼표를 찾기 위한 정규식. 
+
+        a = a.replace( regExp , "$1" + "$2" ); 
+        b = b.replace( regExp , "$1" + "$2" ); 
+
+        var unit = 0; 
+        var aNb = a + " " + b; 
+        var numbers = aNb.match( /\d+/g ); // 문자열에 들어있는 숫자 찾기 
+
+        for ( var x = 0; x < numbers.length; x++ ){ 
+
+                var length = numbers[ x ].length; 
+                if ( unit < length ) unit = length; 
+        } 
+
+        var addZero = function( string ){ // 숫자들의 단위 맞추기 
+
+                var match = string.match( /^0+/ ); 
+
+                if ( string.length == unit ) return ( match == null ) ? string : match + string; 
+
+                var zero = "0"; 
+
+                for ( var x = string.length; x < unit; x++ ) string = zero + string; 
+
+                return ( match == null ) ? string : match + string; 
+        }; 
+
+        change.first = a.replace( /\d+/g, addZero ); 
+        change.second = b.replace( /\d+/g, addZero ); 
+
+        return change; 
+} 
+
+
+/* byLocale() */ 
+
+function byLocale(){ 
+
+        var compare = function( a , b ){ 
+
+                var sorting = sortingNumber( a , b ); 
+
+                if ( typeof sorting == "number" ) return sorting; 
+
+                var change = changeForSorting( a , b ); 
+
+                var a = change.first; 
+                var b = change.second; 
+
+                return a.localeCompare( b ); 
+        }; 
+
+        var ascendingOrder = function( a , b ){  return compare( a , b );  }; 
+        var descendingOrder = function( a , b ){  return compare( b , a );  }; 
+
+        return { ascending : ascendingOrder, descending : descendingOrder }; 
+} 
+
+
+/* replacement() */ 
+ 
+function replacement( parent ){  
+        var tagName = parent.tagName.toLowerCase(); 
+        if ( tagName == "table" ) parent = parent.tBodies[ 0 ]; 
+        tagName = parent.tagName.toLowerCase(); 
+        if ( tagName == "tbody" ) var children = parent.rows; 
+        else var children = parent.getElementsByTagName( "li" ); 
+
+        var replace = { 
+                order : byLocale(), 
+                index : false, 
+                array : function(){ 
+                        var array = [ ]; 
+                        for ( var x = 0; x < children.length; x++ ) array[ x ] = children[ x ]; 
+                        return array; 
+                }(), 
+                checkIndex : function( index ){ 
+                        if ( index ) this.index = parseInt( index, 10 ); 
+                        var tagName = parent.tagName.toLowerCase(); 
+                        if ( tagName == "tbody" && ! index ) this.index = 0; 
+                }, 
+                getText : function( child ){ 
+                        if ( this.index ) child = child.cells[ this.index ]; 
+                        return getTextByClone( child ); 
+                }, 
+                setChildren : function(){ 
+                        var array = this.array; 
+                        while ( parent.hasChildNodes() ) parent.removeChild( parent.firstChild ); 
+                        for ( var x = 0; x < array.length; x++ ) parent.appendChild( array[ x ] ); 
+                }, 
+                ascending : function( index ){ // 오름차순 
+                        this.checkIndex( index ); 
+                        var _self = this; 
+                        var order = this.order; 
+                        var ascending = function( a, b ){ 
+                                var a = _self.getText( a ); 
+                                var b = _self.getText( b ); 
+                                return order.ascending( a, b ); 
+                        }; 
+                        this.array.sort( ascending ); 
+                        this.setChildren(); 
+                }, 
+                descending : function( index ){ // 내림차순
+                        this.checkIndex( index ); 
+                        var _self = this; 
+                        var order = this.order; 
+                        var descending = function( a, b ){ 
+                                var a = _self.getText( a ); 
+                                var b = _self.getText( b ); 
+                                return order.descending( a, b ); 
+                        }; 
+                        this.array.sort( descending ); 
+                        this.setChildren(); 
+                } 
+        }; 
+        return replace; 
+} 
+
+function getTextByClone( tag ){  
+        var clone = tag.cloneNode( true ); // 태그의 복사본 만들기. 
+        var br = clone.getElementsByTagName( "br" ); 
+        while ( br[0] ){ 
+                var blank = document.createTextNode( " " ); 
+                clone.insertBefore( blank , br[0] ); 
+                clone.removeChild( br[0] ); 
+        } 
+        var isBlock = function( tag ){ 
+                var display = ""; 
+                if ( window.getComputedStyle ) display = window.getComputedStyle ( tag, "" )[ "display" ]; 
+                else display = tag.currentStyle[ "display" ]; 
+                return ( display == "block" ) ? true : false; 
+        }; 
+        var children = clone.getElementsByTagName( "*" ); 
+        for ( var x = 0; x < children.length; x++){ 
+                var child = children[ x ]; 
+                if ( ! ("value" in child) && isBlock(child) ) child.innerHTML = child.innerHTML + " "; 
+        } 
+        var textContent = ( "textContent" in clone ) ? clone.textContent : clone.innerText; 
+        return textContent; 
+}
+</script>
+
+</body>
+</html>
