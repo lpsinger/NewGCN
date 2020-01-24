@@ -1,0 +1,453 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>New GCN</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--===============================================================================================-->
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'testapp/vendor/animate/animate.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'testapp/vendor/select2/select2.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+    <link rel="stylesheet" type="text/css" href="{% static 'testapp/css/util.css' %}?{% now "U" %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'testapp/css/main.css' %}?{% now "U" %}">
+    
+</head>
+<body onload="reverseTD (1)">	
+	<div class="limiter">
+		<div class="wrap-table100">
+			<div class="table100 ver4">
+                <h1 style="font-family: 'Arial Black'; font-size: 40pt; padding-bottom: 20pt;"> GCN Circular at First Glance </h1>
+                <h1 style="font-family: 'Arial Black'; font-size: 10pt; padding-bottom: 30pt;"><a href="https://gcn.gsfc.nasa.gov/gcn3_archive.html" style="color:#808080" target="_blank">Link to GCN circular</a>
+				<table id ="NewGCN">
+					<thead>
+						<tr class="row100 head">
+							<th class="cell100 evt" style="text-align:center;">Event Name</th>
+							<th class="cell100 t0" style="text-align:center;">Trigger Time</th>
+							<th class="cell100 ra" style="text-align:center;">R.A.</th>
+							<th class="cell100 dec" style="text-align:center;">Dec.</th>
+                            <th class="cell100 err" style="text-align:center;">Error Circle</th>
+							<th class="cell100 z" style="text-align:center;">Redshift</th>
+							<th class="cell100 tel" style="text-align:center;">Telescopes/observatories</th>
+							<th class="cell100 mw" style="text-align:center;">Wavelength</th>
+							<th class="cell100 mm" style="text-align:center;">Messenger</th>
+						</tr>
+					</thead>
+					<tbody>
+<!--newevt-->
+						<tr class="row100 body" id="S191129u">
+							<td class="cell100 evt"><a href="https://gcn.gsfc.nasa.gov/other/S191129u.gcn3" style="color:#808080" target="gcn">S191129u</a></td>
+							<td class="cell100 t0"><a href="https://gcn.gsfc.nasa.gov/gcn3/26303.gcn3" style="color:#808080" target="gcn"><div data-placement="bottom" data-toggle="tooltip" title="LIGO/Virgo">2019-11-29 13:40:29.197</div></a></td>
+							<td class="cell100 ra"><div data-toggle="tooltip" title="" data-placement="bottom" err=10000.0></div></td>
+							<td class="cell100 dec"><div data-toggle="tooltip" title="" data-placement="bottom"></div></td>
+							<td class="cell100 err"><a href="https://gcn.gsfc.nasa.gov/gcn3/26303.gcn3" style="color:#808080" target="gcn"><div data-placement="bottom" data-toggle="tooltip" title="LIGO/Virgo"></div></a></td>
+							<td class="cell100 z"><a href="https://gcn.gsfc.nasa.gov/gcn3/26303.gcn3" style="color:#808080" target="gcn"><div data-placement="bottom" data-toggle="tooltip" err="0.03785868898022521" title="+/-0.0379">0.1550</div></a></td>
+							<td class="cell100 tel"><a href="https://gcn.gsfc.nasa.gov/gcn3/26303.gcn3" target="gcn"><div class="box_tel_on">LIGO/Virgo</div></a><a href="https://gcn.gsfc.nasa.gov/gcn3/26304.gcn3" target="gcn"><div class="box_tel_off">MASTER</div></a><a href="https://gcn.gsfc.nasa.gov/gcn3/26305.gcn3" target="gcn"><div class="box_tel_off">IceCube</div></a><a href="https://gcn.gsfc.nasa.gov/gcn3/26306.gcn3" target="gcn"><div class="box_tel_off">AGILE/MCAL</div></a><a href="https://gcn.gsfc.nasa.gov/gcn3/26307.gcn3" target="gcn"><div class="box_tel_off">ANTARES</div></a><a href="https://gcn.gsfc.nasa.gov/gcn3/26308.gcn3" target="gcn"><div class="box_tel_off">AGILE/GRID</div></a><a href="https://gcn.gsfc.nasa.gov/gcn3/26309.gcn3" target="gcn"><div class="box_tel_off">MAXI/GSC</div></a><a href="https://gcn.gsfc.nasa.gov/gcn3/26310.gcn3" target="gcn"><div class="box_tel_off">HAWC</div></a><a href="https://gcn.gsfc.nasa.gov/gcn3/26312.gcn3" target="gcn"><div class="box_tel_off">INTEGRAL/IBIS</div></a><a href="https://gcn.gsfc.nasa.gov/gcn3/26312.gcn3" target="gcn"><div class="box_tel_off">INTEGRAL/SPI</div></a><a href="https://gcn.gsfc.nasa.gov/gcn3/26313.gcn3" target="gcn"><div class="box_tel_off">Swift/BAT</div></a><a href="https://gcn.gsfc.nasa.gov/gcn3/26314.gcn3" target="gcn"><div class="box_tel_off">Fermi/GBM</div></a><a href="https://gcn.gsfc.nasa.gov/gcn3/26315.gcn3" target="gcn"><div class="box_tel_off">Fermi/LAT</div></a><a href="https://gcn.gsfc.nasa.gov/gcn3/26317.gcn3" target="gcn"><div class="box_tel_off">Insight-HXMT/HE</div></a><a href="https://gcn.gsfc.nasa.gov/gcn3/26321.gcn3" target="gcn"><div class="box_tel_off">CALET/CGBM</div></a></td>
+							<td class="cell100 mw"><div class="box_off">radio</div><div class="box_off">optical</div><div class="box_off">X-ray</div><div class="box_off">&gamma;-ray</div><div class="box_off">HE</div><div class="box_off">VHE</div></td>
+							<td class="cell100 mm"><div class="box_off">EM</div><a href="https://gracedb.ligo.org/superevents/S191129u/view/" target="_blank"><div class="box_on">GW</div></a><div class="box_off">&nu;</div></td>
+						</tr>
+						<tr class="row100 body" id="GRB 191129A">
+							<td class="cell100 evt"><a href="https://gcn.gsfc.nasa.gov/other/191129A.gcn3" style="color:#808080" target="gcn">GRB 191129A</a></td>
+							<td class="cell100 t0"><a href="https://gcn.gsfc.nasa.gov/gcn3/26301.gcn3" style="color:#808080" target="gcn"><div data-placement="bottom" data-toggle="tooltip" title="Fermi/GBM">2019-11-29 03:22:27</div></a></td>
+							<td class="cell100 ra"><div data-toggle="tooltip" title="0:35:36.00" data-placement="bottom" err=150.0>8.9  &deg;</div></td>
+							<td class="cell100 dec"><div data-toggle="tooltip" title="0:21:36.00" data-placement="bottom">5.4  &deg;</div></td>
+							<td class="cell100 err"><a href="https://gcn.gsfc.nasa.gov/gcn3/26301.gcn3" style="color:#808080" target="gcn"><div data-placement="bottom" data-toggle="tooltip" title="Fermi/GBM">2.50 °</div></a></td>
+							<td class="cell100 z"><div data-placement="bottom" data-toggle="tooltip" err="10" title=""></div></td>
+							<td class="cell100 tel"><a href="https://gcn.gsfc.nasa.gov/gcn3/26301.gcn3" target="gcn"><div class="box_tel_on">Fermi/GBM</div></a><a href="https://gcn.gsfc.nasa.gov/gcn3/26316.gcn3" target="gcn"><div class="box_tel_on">AstroSat/CZTI</div></a></td>
+							<td class="cell100 mw"><div class="box_off">radio</div><div class="box_off">optical</div><div class="box_2">X-ray</div><div class="box_3">&gamma;-ray</div><div class="box_off">HE</div><div class="box_off">VHE</div></td>
+							<td class="cell100 mm"><div class="box_on">EM</div><div class="box_off">GW</div><div class="box_off">&nu;</div></td>
+						</tr>
+						<tr class="row100 body" id="GRB 191125B">
+							<td class="cell100 evt"><a href="https://gcn.gsfc.nasa.gov/other/191125B.gcn3" style="color:#808080" target="gcn">GRB 191125B</a></td>
+							<td class="cell100 t0"><a href="https://gcn.gsfc.nasa.gov/gcn3/26293.gcn3" style="color:#808080" target="gcn"><div data-placement="bottom" data-toggle="tooltip" title="Fermi/GBM">2019-11-25 15:12:45</div></a></td>
+							<td class="cell100 ra"><div data-toggle="tooltip" title="23:34:0.00" data-placement="bottom" err=245.99999999999997>353.5  &deg;</div></td>
+							<td class="cell100 dec"><div data-toggle="tooltip" title="1:12:48.00" data-placement="bottom">18.2  &deg;</div></td>
+							<td class="cell100 err"><a href="https://gcn.gsfc.nasa.gov/gcn3/26293.gcn3" style="color:#808080" target="gcn"><div data-placement="bottom" data-toggle="tooltip" title="Fermi/GBM">4.10 °</div></a></td>
+							<td class="cell100 z"><div data-placement="bottom" data-toggle="tooltip" err="10" title=""></div></td>
+							<td class="cell100 tel"><a href="https://gcn.gsfc.nasa.gov/gcn3/26293.gcn3" target="gcn"><div class="box_tel_on">Fermi/GBM</div></a><a href="https://gcn.gsfc.nasa.gov/gcn3/26299.gcn3" target="gcn"><div class="box_tel_on">MASTER</div></a></td>
+							<td class="cell100 mw"><div class="box_off">radio</div><div class="box_1">optical</div><div class="box_off">X-ray</div><div class="box_3">&gamma;-ray</div><div class="box_off">HE</div><div class="box_off">VHE</div></td>
+							<td class="cell100 mm"><div class="box_on">EM</div><div class="box_off">GW</div><div class="box_off">&nu;</div></td>
+						</tr>
+						<tr class="row100 body" id="GRB 191125A">
+							<td class="cell100 evt"><a href="https://gcn.gsfc.nasa.gov/other/191125A.gcn3" style="color:#808080" target="gcn">GRB 191125A</a></td>
+							<td class="cell100 t0"><a href="https://gcn.gsfc.nasa.gov/gcn3/26292.gcn3" style="color:#808080" target="gcn"><div data-placement="bottom" data-toggle="tooltip" title="Fermi/GBM">2019-11-25 04:56:43</div></a></td>
+							<td class="cell100 ra"><div data-toggle="tooltip" title="16:12:24.00" data-placement="bottom" err=60.0>243.1 &deg;</div></td>
+							<td class="cell100 dec"><div data-toggle="tooltip" title="-0:52:24.00" data-placement="bottom">-13.1 &deg;</div></td>
+							<td class="cell100 err"><a href="https://gcn.gsfc.nasa.gov/gcn3/26292.gcn3" style="color:#808080" target="gcn"><div data-toggle="tooltip" title="Fermi/GBM" data-placement="bottom">1.00 &deg;</div></a></td>
+							<td class="cell100 z"><div data-placement="bottom" data-toggle="tooltip" err="10" title=""></div></td>
+							<td class="cell100 tel"><a href="https://gcn.gsfc.nasa.gov/gcn3/26292.gcn3" target="gcn"><div class="box_tel_on">Fermi/GBM</div></a></td>
+							<td class="cell100 mw"><div class="box_off">radio</div><div class="box_off">optical</div><div class="box_off">X-ray</div><div class="box_3">&gamma;-ray</div><div class="box_off">HE</div><div class="box_off">VHE</div></td>
+							<td class="cell100 mm"><div class="box_on">EM</div><div class="box_off">GW</div><div class="box_off">&nu;</div></td>
+						</tr>
+						<tr class="row100 body" id="S191124be">
+							<td class="cell100 evt"><a href="https://gcn.gsfc.nasa.gov/other/S191124be.gcn3" style="color:#808080" target="gcn">S191124be</a></td>
+							<td class="cell100 t0"><a href="https://gcn.gsfc.nasa.gov/gcn3/26288.gcn3" style="color:#808080" target="gcn"><div data-placement="bottom" data-toggle="tooltip" title="LIGO/Virgo">2019-11-24</div></a></td>
+							<td class="cell100 ra"><div data-toggle="tooltip" title="" data-placement="bottom" err=10000.0></div></td>
+							<td class="cell100 dec"><div data-toggle="tooltip" title="" data-placement="bottom"></div></td>
+							<td class="cell100 err"><a href="https://gcn.gsfc.nasa.gov/gcn3/26288.gcn3" style="color:#808080" target="gcn"><div data-placement="bottom" data-toggle="tooltip" title="LIGO/Virgo"></div></a></td>
+							<td class="cell100 z"><div data-placement="bottom" data-toggle="tooltip" err="10" title=""></div></td>
+							<td class="cell100 tel"><a href="https://gcn.gsfc.nasa.gov/gcn3/26288.gcn3" target="gcn"><div class="box_tel_off">LIGO/Virgo</div></a><a href="https://gcn.gsfc.nasa.gov/gcn3/26289.gcn3" target="gcn"><div class="box_tel_off">MASTER</div></a></td>
+							<td class="cell100 mw"><div class="box_off">radio</div><div class="box_off">optical</div><div class="box_off">X-ray</div><div class="box_off">&gamma;-ray</div><div class="box_off">HE</div><div class="box_off">VHE</div></td>
+							<td class="cell100 mm"><div class="box_off">EM</div><div class="box_off">GW</div><div class="box_off">&nu;</div></td>
+						</tr>
+						<tr class="row100 body" id="GRB 191123A">
+							<td class="cell100 evt"><a href="https://gcn.gsfc.nasa.gov/other/191123A.gcn3" style="color:#808080" target="gcn">GRB 191123A</a></td>
+							<td class="cell100 t0"><a href="https://gcn.gsfc.nasa.gov/gcn3/26279.gcn3" style="color:#808080" target="gcn"><div data-placement="bottom" data-toggle="tooltip" title="Swift/BAT or Swift/XRT or Swift/UVOT">2019-11-23 10:38:44</div></a></td>
+							<td class="cell100 ra"><div data-toggle="tooltip" title="14:21:2.85" data-placement="bottom" err=0.028333333333333332>215.262    &deg;</div></td>
+							<td class="cell100 dec"><div data-toggle="tooltip" title="+22:51:35.7" data-placement="bottom">22.860    &deg;</div></td>
+							<td class="cell100 err"><a href="https://gcn.gsfc.nasa.gov/gcn3/26284.gcn3" style="color:#808080" target="gcn"><div data-placement="bottom" data-toggle="tooltip" title="Swift/XRT">1.70 "</div></a></td>
+							<td class="cell100 z"><div data-placement="bottom" data-toggle="tooltip" err="10" title=""></div></td>
+							<td class="cell100 tel"><a href="https://gcn.gsfc.nasa.gov/gcn3/26287.gcn3" target="gcn"><div class="box_tel_on">Swift/UVOT</div></a><a href="https://gcn.gsfc.nasa.gov/gcn3/26285.gcn3" target="gcn"><div class="box_tel_on">Swift/XRT</div></a><a href="https://gcn.gsfc.nasa.gov/gcn3/26286.gcn3" target="gcn"><div class="box_tel_on">Swift/BAT</div></a><a href="https://gcn.gsfc.nasa.gov/gcn3/26283.gcn3" target="gcn"><div class="box_tel_off">iTelescope</div></a></td>
+							<td class="cell100 mw"><div class="box_off">radio</div><div class="box_1">optical</div><div class="box_2">X-ray</div><div class="box_3">&gamma;-ray</div><div class="box_off">HE</div><div class="box_off">VHE</div></td>
+							<td class="cell100 mm"><div class="box_on">EM</div><div class="box_off">GW</div><div class="box_off">&nu;</div></td>
+						</tr>
+						<tr class="row100 body" id="GRB 191118A">
+							<td class="cell100 evt"><a href="https://gcn.gsfc.nasa.gov/other/191118A.gcn3" style="color:#808080" target="gcn">GRB 191118A</a></td>
+							<td class="cell100 t0"><a href="https://gcn.gsfc.nasa.gov/gcn3/26278.gcn3" style="color:#808080" target="gcn"><div data-placement="bottom" data-toggle="tooltip" title="Insight-HXMT/HE">2019-11-18 22:12:01.82</div></a></td>
+							<td class="cell100 ra"><div data-toggle="tooltip" title="" data-placement="bottom" err=10000></div></td>
+							<td class="cell100 dec"><div data-toggle="tooltip" title="" data-placement="bottom"></div></td>
+							<td class="cell100 err"><a href="https://gcn.gsfc.nasa.gov/gcn3/26278.gcn3" style="color:#808080" target="gcn"><div data-toggle="tooltip" title="Insight-HXMT/HE" data-placement="bottom"></div></a></td>
+							<td class="cell100 z"><div data-placement="bottom" data-toggle="tooltip" err="10" title=""></div></td>
+							<td class="cell100 tel"><a href="https://gcn.gsfc.nasa.gov/gcn3/26278.gcn3" target="gcn"><div class="box_tel_on">Insight-HXMT/HE</div></a></td>
+							<td class="cell100 mw"><div class="box_off">radio</div><div class="box_off">optical</div><div class="box_off">X-ray</div><div class="box_3">&gamma;-ray</div><div class="box_off">HE</div><div class="box_off">VHE</div></td>
+							<td class="cell100 mm"><div class="box_on">EM</div><div class="box_off">GW</div><div class="box_off">&nu;</div></td>
+						</tr>
+						<tr class="row100 body" id="IceCube-191122A">
+							<td class="cell100 evt"><a href="https://gcn.gsfc.nasa.gov/other/icecube_191122A.gcn3" style="color:#808080" target="gcn">IC191122A</a></td>
+							<td class="cell100 t0"><a href="https://gcn.gsfc.nasa.gov/gcn3/26276.gcn3" style="color:#808080" target="gcn"><div data-placement="bottom" data-toggle="tooltip" title="IceCube">2019-11-22 22:45:10.50</div></a></td>
+							<td class="cell100 ra"><div data-toggle="tooltip" title="1:49:0.00" data-placement="bottom" err=174.0>27.25       &deg;</div></td>
+							<td class="cell100 dec"><div data-toggle="tooltip" title="-0:0:9.60" data-placement="bottom">-0.04       &deg;</div></td>
+							<td class="cell100 err"><a href="https://gcn.gsfc.nasa.gov/gcn3/26276.gcn3" style="color:#808080" target="gcn"><div data-placement="bottom" data-toggle="tooltip" title="IceCube">2.90 °</div></a></td>
+							<td class="cell100 z"><div data-placement="bottom" data-toggle="tooltip" err="10" title=""></div></td>
+							<td class="cell100 tel"><a href="https://gcn.gsfc.nasa.gov/gcn3/26295.gcn3" target="gcn"><div class="box_tel_on">IceCube</div></a><a href="https://gcn.gsfc.nasa.gov/gcn3/26280.gcn3" target="gcn"><div class="box_tel_off">MASTER</div></a><a href="https://gcn.gsfc.nasa.gov/gcn3/26281.gcn3" target="gcn"><div class="box_tel_off">INTEGRAL/IBIS</div></a><a href="https://gcn.gsfc.nasa.gov/gcn3/26281.gcn3" target="gcn"><div class="box_tel_off">INTEGRAL/SPI</div></a><a href="https://gcn.gsfc.nasa.gov/gcn3/26290.gcn3" target="gcn"><div class="box_tel_off">Fermi/LAT</div></a><a href="https://gcn.gsfc.nasa.gov/gcn3/26296.gcn3" target="gcn"><div class="box_tel_off">Fermi/GBM</div></a><a href="https://gcn.gsfc.nasa.gov/gcn3/26298.gcn3" target="gcn"><div class="box_tel_off">HAWC</div></a></td>
+							<td class="cell100 mw"><div class="box_off">radio</div><div class="box_off">optical</div><div class="box_off">X-ray</div><div class="box_off">&gamma;-ray</div><div class="box_off">HE</div><div class="box_off">VHE</div></td>
+							<td class="cell100 mm"><div class="box_off">EM</div><div class="box_off">GW</div><div class="box_on">&nu;</div></td>
+						</tr>
+						<tr class="row100 body" id="GRB 191122A">
+							<td class="cell100 evt"><a href="https://gcn.gsfc.nasa.gov/other/191122A.gcn3" style="color:#808080" target="gcn">GRB 191122A</a></td>
+							<td class="cell100 t0"><a href="https://gcn.gsfc.nasa.gov/gcn3/26269.gcn3" style="color:#808080" target="gcn"><div data-placement="bottom" data-toggle="tooltip" title="Swift/BAT or Swift/XRT">2019-11-22 13:32:56</div></a></td>
+							<td class="cell100 ra"><div data-toggle="tooltip" title="03:37:11" data-placement="bottom" err=3.0>54.296  &deg;</div></td>
+							<td class="cell100 dec"><div data-toggle="tooltip" title="-32:10:32" data-placement="bottom">-32.176  &deg;</div></td>
+							<td class="cell100 err"><a href="https://gcn.gsfc.nasa.gov/gcn3/26269.gcn3" style="color:#808080" target="gcn"><div data-placement="bottom" data-toggle="tooltip" title="Swift/BAT or Swift/XRT">3.00 '</div></a></td>
+							<td class="cell100 z"><div data-placement="bottom" data-toggle="tooltip" err="10" title=""></div></td>
+							<td class="cell100 tel"><a href="https://gcn.gsfc.nasa.gov/gcn3/26269.gcn3" target="gcn"><div class="box_tel_on">Swift/BAT</div></a><a href="https://gcn.gsfc.nasa.gov/gcn3/26269.gcn3" target="gcn"><div class="box_tel_on">Swift/XRT</div></a><a href="https://gcn.gsfc.nasa.gov/gcn3/26277.gcn3" target="gcn"><div class="box_tel_off">Swift/UVOT</div></a></td>
+							<td class="cell100 mw"><div class="box_off">radio</div><div class="box_off">optical</div><div class="box_2">X-ray</div><div class="box_3">&gamma;-ray</div><div class="box_off">HE</div><div class="box_off">VHE</div></td>
+							<td class="cell100 mm"><div class="box_on">EM</div><div class="box_off">GW</div><div class="box_off">&nu;</div></td>
+						</tr>
+						<tr class="row100 body" id="GRB 190830B">
+							<td class="cell100 evt"><a href="https://gcn.gsfc.nasa.gov/other/190830B.gcn3" style="color:#808080" target="gcn">GRB 190830B</a></td>
+							<td class="cell100 t0"><a href="https://gcn.gsfc.nasa.gov/gcn3/25564.gcn3" style="color:#808080" target="gcn"><div data-placement="bottom" data-toggle="tooltip" title="Fermi/GBM">2019-08-30 06:20:46</div></a></td>
+							<td class="cell100 ra"><div data-toggle="tooltip" title="10:36:48.00" data-placement="bottom" err=588.0>159.2 &deg;</div></td>
+							<td class="cell100 dec"><div data-toggle="tooltip" title="-3:38:48.00" data-placement="bottom">-54.7 &deg;</div></td>
+							<td class="cell100 err"><a href="https://gcn.gsfc.nasa.gov/gcn3/25564.gcn3" style="color:#808080" target="gcn"><div data-toggle="tooltip" title="Fermi/GBM" data-placement="bottom">9.80 &deg;</div></a></td>
+							<td class="cell100 z"><div data-placement="bottom" data-toggle="tooltip" err="10" title=""></div></td>
+							<td class="cell100 tel"><a href="https://gcn.gsfc.nasa.gov/gcn3/25564.gcn3" target="gcn"><div class="box_tel_on">Fermi/GBM</div></a></td>
+							<td class="cell100 mw"><div class="box_off">radio</div><div class="box_off">optical</div><div class="box_off">X-ray</div><div class="box_3">&gamma;-ray</div><div class="box_off">HE</div><div class="box_off">VHE</div></td>
+							<td class="cell100 mm"><div class="box_on">EM</div><div class="box_off">GW</div><div class="box_off">&nu;</div></td>
+						</tr>
+						<tr class="row100 body" id="GRB 190830A">
+							<td class="cell100 evt"><a href="https://gcn.gsfc.nasa.gov/other/190830A.gcn3" style="color:#808080" target="gcn">GRB 190830A</a></td>
+							<td class="cell100 t0"><a href="https://gcn.gsfc.nasa.gov/gcn3/25561.gcn3" style="color:#808080" target="gcn"><div data-placement="bottom" data-toggle="tooltip" title="Fermi/GBM">2019-08-30 00:32:48</div></a></td>
+							<td class="cell100 ra"><div data-toggle="tooltip" title="7:27:36.00" data-placement="bottom" err=450.0>111.9 &deg;</div></td>
+							<td class="cell100 dec"><div data-toggle="tooltip" title="-1:35:12.00" data-placement="bottom">-23.8 &deg;</div></td>
+							<td class="cell100 err"><a href="https://gcn.gsfc.nasa.gov/gcn3/25561.gcn3" style="color:#808080" target="gcn"><div data-toggle="tooltip" title="Fermi/GBM" data-placement="bottom">7.50 &deg;</div></a></td>
+							<td class="cell100 z"><div data-placement="bottom" data-toggle="tooltip" err="10" title=""></div></td>
+							<td class="cell100 tel"><a href="https://gcn.gsfc.nasa.gov/gcn3/25561.gcn3" target="gcn"><div class="box_tel_on">Fermi/GBM</div></a></td>
+							<td class="cell100 mw"><div class="box_off">radio</div><div class="box_off">optical</div><div class="box_off">X-ray</div><div class="box_3">&gamma;-ray</div><div class="box_off">HE</div><div class="box_off">VHE</div></td>
+							<td class="cell100 mm"><div class="box_on">EM</div><div class="box_off">GW</div><div class="box_off">&nu;</div></td>
+						</tr>
+						<tr class="row100 body" id="S190829u">
+							<td class="cell100 evt"><a href="https://gcn.gsfc.nasa.gov/other/S190829u.gcn3" style="color:#808080" target="gcn">S190829u</a></td>
+							<td class="cell100 t0"><a href="https://gcn.gsfc.nasa.gov/gcn3/25554.gcn3" style="color:#808080" target="gcn"><div data-placement="bottom" data-toggle="tooltip" title="LIGO/Virgo">2019-08-29</div></a></td>
+							<td class="cell100 ra"><div data-toggle="tooltip" title="" data-placement="bottom" err=10000.0></div></td>
+							<td class="cell100 dec"><div data-toggle="tooltip" title="" data-placement="bottom"></div></td>
+							<td class="cell100 err"><a href="https://gcn.gsfc.nasa.gov/gcn3/25554.gcn3" style="color:#808080" target="gcn"><div data-placement="bottom" data-toggle="tooltip" title="LIGO/Virgo"></div></a></td>
+							<td class="cell100 z"><div data-placement="bottom" data-toggle="tooltip" err="10" title=""></div></td>
+							<td class="cell100 tel"><a href="https://gcn.gsfc.nasa.gov/gcn3/25554.gcn3" target="gcn"><div class="box_tel_off">LIGO/Virgo</div></a><a href="https://gcn.gsfc.nasa.gov/gcn3/25556.gcn3" target="gcn"><div class="box_tel_off">MASTER</div></a></td>
+							<td class="cell100 mw"><div class="box_off">radio</div><div class="box_off">optical</div><div class="box_off">X-ray</div><div class="box_off">&gamma;-ray</div><div class="box_off">HE</div><div class="box_off">VHE</div></td>
+							<td class="cell100 mm"><div class="box_off">EM</div><div class="box_off">GW</div><div class="box_off">&nu;</div></td>
+						</tr>
+						<tr class="row100 body" id="GRB 190829A">
+							<td class="cell100 evt"><a href="https://gcn.gsfc.nasa.gov/other/190829A.gcn3" style="color:#808080" target="gcn">GRB 190829A</a></td>
+							<td class="cell100 t0"><a href="https://gcn.gsfc.nasa.gov/gcn3/25551.gcn3" style="color:#808080" target="gcn"><div data-placement="bottom" data-toggle="tooltip" title="Fermi/GBM">2019-08-29 19:55:53</div></a></td>
+							<td class="cell100 ra"><div data-toggle="tooltip" title="02:58:10" data-placement="bottom" err=3.0>44.542      &deg;</div></td>
+							<td class="cell100 dec"><div data-toggle="tooltip" title="-08:58:03" data-placement="bottom">-8.967      &deg;</div></td>
+							<td class="cell100 err"><a href="https://gcn.gsfc.nasa.gov/gcn3/25552.gcn3" style="color:#808080" target="gcn"><div data-placement="bottom" data-toggle="tooltip" title="Swift/BAT or Swift/XRT">3.00 '</div></a></td>
+							<td class="cell100 z"><a href="https://gcn.gsfc.nasa.gov/gcn3/25565.gcn3" style="color:#808080" target="gcn"><div data-placement="bottom" data-toggle="tooltip" err="0.005" title="+/-0.0050">0.0785</div></a></td>
+							<td class="cell100 tel"><a href="https://gcn.gsfc.nasa.gov/gcn3/25551.gcn3" target="gcn"><div class="box_tel_on">Fermi/GBM</div></a><a href="https://gcn.gsfc.nasa.gov/gcn3/25552.gcn3" target="gcn"><div class="box_tel_on">Swift/BAT</div></a><a href="https://gcn.gsfc.nasa.gov/gcn3/25552.gcn3" target="gcn"><div class="box_tel_on">Swift/XRT</div></a><a href="https://gcn.gsfc.nasa.gov/gcn3/25555.gcn3" target="gcn"><div class="box_tel_on">HMT</div></a><a href="https://gcn.gsfc.nasa.gov/gcn3/25560.gcn3" target="gcn"><div class="box_tel_on">GROWTH</div></a><a href="https://gcn.gsfc.nasa.gov/gcn3/25563.gcn3" target="gcn"><div class="box_tel_on">NOT</div></a><a href="https://gcn.gsfc.nasa.gov/gcn3/25565.gcn3" target="gcn"><div class="box_tel_on">GTC</div></a><a href="https://gcn.gsfc.nasa.gov/gcn3/25552.gcn3" target="gcn"><div class="box_tel_off">Swift/UVOT</div></a><a href="https://gcn.gsfc.nasa.gov/gcn3/25558.gcn3" target="gcn"><div class="box_tel_off">MASTER</div></a></td>
+							<td class="cell100 mw"><div class="box_off">radio</div><div class="box_1">optical</div><div class="box_2">X-ray</div><div class="box_3">&gamma;-ray</div><div class="box_off">HE</div><div class="box_off">VHE</div></td>
+							<td class="cell100 mm"><div class="box_on">EM</div><div class="box_off">GW</div><div class="box_off">&nu;</div></td>
+						</tr>
+						<tr class="row100 body" id="S190814bv">
+							<td class="cell100 evt"><a href="https://gcn.gsfc.nasa.gov/other/S190814bv.gcn3" style="color:#808080" target="gcn">S190814bv</a></td>
+							<td class="cell100 t0"><a href="https://gcn.gsfc.nasa.gov/gcn3/25324.gcn3" style="color:#808080" target="gcn"><div data-placement="bottom" data-toggle="tooltip" title="LIGO/Virgo">2019-08-14 21:10:39.013</div></a></td>
+							<td class="cell100 ra"><div data-toggle="tooltip" title="" data-placement="bottom" err=10000.0></div></td>
+							<td class="cell100 dec"><div data-toggle="tooltip" title="" data-placement="bottom"></div></td>
+							<td class="cell100 err"><a href="https://gcn.gsfc.nasa.gov/gcn3/25324.gcn3" style="color:#808080" target="gcn"><div data-placement="bottom" data-toggle="tooltip" title="LIGO/Virgo"></div></a></td>
+							<td class="cell100 z"><a href="https://gcn.gsfc.nasa.gov/gcn3/25324.gcn3" style="color:#808080" target="gcn"><div data-placement="bottom" data-toggle="tooltip" err="0.011713164008889158" title="+/-0.0117">0.0597</div></a></td>
+							<td class="cell100 tel"><a href="https://gcn.gsfc.nasa.gov/gcn3/25324.gcn3" target="gcn"><div class="box_tel_on">LIGO/Virgo</div></a><a href="https://gcn.gsfc.nasa.gov/gcn3/25557.gcn3" target="gcn"><div class="box_tel_off">IceCube</div></a></td>
+							<td class="cell100 mw"><div class="box_off">radio</div><div class="box_off">optical</div><div class="box_off">X-ray</div><div class="box_off">&gamma;-ray</div><div class="box_off">HE</div><div class="box_off">VHE</div></td>
+							<td class="cell100 mm"><div class="box_off">EM</div><a href="https://gracedb.ligo.org/superevents/S190814bv/view/" target="_blank"><div class="box_on">GW</div></a><div class="box_off">&nu;</div></td>
+						</tr>
+						<tr class="row100 body" id="S190828l">
+							<td class="cell100 evt"><a href="https://gcn.gsfc.nasa.gov/other/S190828l.gcn3" style="color:#808080" target="gcn">S190828l</a></td>
+							<td class="cell100 t0"><a href="https://gcn.gsfc.nasa.gov/gcn3/25503.gcn3" style="color:#808080" target="gcn"><div data-placement="bottom" data-toggle="tooltip" title="LIGO/Virgo">2019-08-28 06:55:09.887</div></a></td>
+							<td class="cell100 ra"><div data-toggle="tooltip" title="" data-placement="bottom" err=10000.0></div></td>
+							<td class="cell100 dec"><div data-toggle="tooltip" title="" data-placement="bottom"></div></td>
+							<td class="cell100 err"><a href="https://gcn.gsfc.nasa.gov/gcn3/25503.gcn3" style="color:#808080" target="gcn"><div data-placement="bottom" data-toggle="tooltip" title="LIGO/Virgo"></div></a></td>
+							<td class="cell100 z"><a href="https://gcn.gsfc.nasa.gov/gcn3/25503.gcn3" style="color:#808080" target="gcn"><div data-placement="bottom" data-toggle="tooltip" err="0.0712480513734928" title="+/-0.0712">0.3012</div></a></td>
+							<td class="cell100 tel"><a href="https://gcn.gsfc.nasa.gov/gcn3/25503.gcn3" target="gcn"><div class="box_tel_on">LIGO/Virgo</div></a><a href="https://gcn.gsfc.nasa.gov/gcn3/25559.gcn3" target="gcn"><div class="box_tel_off">KAIT</div></a><a href="https://gcn.gsfc.nasa.gov/gcn3/25501.gcn3" target="gcn"><div class="box_tel_off">HAWC</div></a></td>
+							<td class="cell100 mw"><div class="box_off">radio</div><div class="box_off">optical</div><div class="box_off">X-ray</div><div class="box_off">&gamma;-ray</div><div class="box_off">HE</div><div class="box_off">VHE</div></td>
+							<td class="cell100 mm"><div class="box_off">EM</div><a href="https://gracedb.ligo.org/superevents/S190828l/view/" target="_blank"><div class="box_on">GW</div></a><div class="box_off">&nu;</div></td>
+						</tr>
+						<tr class="row100 body" id="S190828j">
+							<td class="cell100 evt"><a href="https://gcn.gsfc.nasa.gov/other/S190828j.gcn3" style="color:#808080" target="gcn">S190828j</a></td>
+							<td class="cell100 t0"><a href="https://gcn.gsfc.nasa.gov/gcn3/25497.gcn3" style="color:#808080" target="gcn"><div data-placement="bottom" data-toggle="tooltip" title="LIGO/Virgo">2019-08-28 06:34:05.756</div></a></td>
+							<td class="cell100 ra"><div data-toggle="tooltip" title="" data-placement="bottom" err=10000.0></div></td>
+							<td class="cell100 dec"><div data-toggle="tooltip" title="" data-placement="bottom"></div></td>
+							<td class="cell100 err"><a href="https://gcn.gsfc.nasa.gov/gcn3/25497.gcn3" style="color:#808080" target="gcn"><div data-placement="bottom" data-toggle="tooltip" title="LIGO/Virgo"></div></a></td>
+							<td class="cell100 z"><a href="https://gcn.gsfc.nasa.gov/gcn3/25497.gcn3" style="color:#808080" target="gcn"><div data-placement="bottom" data-toggle="tooltip" err="0.08357782910168432" title="+/-0.0836">0.4056</div></a></td>
+							<td class="cell100 tel"><a href="https://gcn.gsfc.nasa.gov/gcn3/25497.gcn3" target="gcn"><div class="box_tel_on">LIGO/Virgo</div></a><a href="https://gcn.gsfc.nasa.gov/gcn3/25562.gcn3" target="gcn"><div class="box_tel_off">DDOTI/OAN</div></a></td>
+							<td class="cell100 mw"><div class="box_off">radio</div><div class="box_off">optical</div><div class="box_off">X-ray</div><div class="box_off">&gamma;-ray</div><div class="box_off">HE</div><div class="box_off">VHE</div></td>
+							<td class="cell100 mm"><div class="box_off">EM</div><a href="https://gracedb.ligo.org/superevents/S190828j/view/" target="_blank"><div class="box_on">GW</div></a><div class="box_off">&nu;</div></td>
+						</tr>
+						<tr class="row100 body" id="GRB 190114C">
+							<td class="cell100 evt"><a href="https://gcn.gsfc.nasa.gov/other/190114C.gcn3" style="color:#808080" target="_blank">GRB 190114C</a></td>
+							<td class="cell100 t0">2019-01-14 20:57:03</td>
+							<td class="cell100 ra"><div data-toggle="tooltip" title="03:38:01.16" data-placement="bottom" err="0.42">54.505 &deg;</div></td>
+							<td class="cell100 dec"><div data-toggle="tooltip" title="-26:56:46.9" data-placement="bottom">-26.946 &deg;</div></td>
+                            <td class="cell100 err">0.42 '</td>
+							<td class="cell100 z"><div data-toggle="tooltip" title="+/-0.0005" data-placement="bottom" err="0.0005">0.4245</div></td>
+							<td class="cell100 tel"><div class="box_tel_on">MAGIC</div><div class="box_tel_on">Fermi/GBM</div><div class="box_tel_on">Fermi/LAT</div><div class="box_tel_on">Swift/BAT</div><div class="box_tel_on">Swift/XRT</div><div class="box_tel_on">......</div></td>
+							<td class="cell100 mw"><div class="box_0">radio</div><div class="box_1">optical</div><div class="box_2">X-ray</div><div class="box_3">&gamma;-ray</div><div class="box_4">HE</div><div class="box_5">VHE</div></td>
+							<td class="cell100 mm"><div class="box_on">EM</div><div class="box_off">GW</div><div class="box_off">&nu;</div></td>
+						</tr>
+						<tr class="row100 body" id="G298048">
+							<td class="cell100 evt"><a href="https://gcn.gsfc.nasa.gov/other/G298048.gcn3" style="color:#808080" target="_blank">GW170817</a></td>
+							<td class="cell100 t0">2017-08-17 12:41:04</td>
+							<td class="cell100 ra"><div data-toggle="tooltip" title="13:09:48.09" data-placement="bottom" err="0.001"> 197.450 &deg;</div></td>
+							<td class="cell100 dec"><div data-toggle="tooltip" title="-23:22:53.34" data-placement="bottom">-23.381 &deg;</div></td>
+                            <td class="cell100 err">0.02 ''</td>
+                            <td class="cell100 z"><div data-toggle="tooltip" title="+/-0.0008" data-placement="bottom" err="0.0008">0.0099</div></td>
+							<td class="cell100 tel"><div class="box_tel_on">LIGO</div><div class="box_tel_on">Fermi/GBM</div><div class="box_tel_on">INTEGRAL</div><div class="box_tel_on">......</div></td>
+							<td class="cell100 mw"><div class="box_0">radio</div><div class="box_1">optical</div><div class="box_2">X-ray</div><div class="box_3">&gamma;-ray</div><div class="box_off">HE</div><div class="box_off">VHE</div></td>
+							<td class="cell100 mm"><div class="box_on">EM</div><div class="box_on">GW</div><div class="box_off">&nu;</div></td>
+						</tr>
+					</tbody>
+				</table>
+                <h1 style="font-family: 'Arial-black'; font-size: 10pt; padding-bottom: 30pt; text-align: right; color:#808080">Made by Donggeun Tak  <a href="mailto:donggeun.tak@gmail.com" style="color:#808080" target="_blank"><i class="fa fa-envelope-o"></i></a>
+			</div>
+		</div>
+	</div>
+
+
+
+
+<!--===============================================================================================-->	
+	<script type="text/javascript", src="{% static 'testapp/vendor/jquery/jquery-3.2.1.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript", src="{% static 'testapp/vendor/bootstrap/js/popper.js' %}"></script>
+	<script type="text/javascript", src="{% static 'testapp/vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript", src="{% static 'testapp/vendor/select2/select2.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript", src="{% static 'testapp/js/main.js' %}"></script>
+	<script type="text/javascript", src="{% static 'testapp/js/sub.js' %}"></script>
+
+<!--===============================================================================================-->
+
+
+<script type="text/javascript">
+var myTable = document.getElementById( "NewGCN" ); 
+var replace = replacement( myTable ); 
+function sortTD( index ){    replace.ascending( index );    } 
+function reverseTD( index ){    replace.descending( index );    } 
+function sortingNumber( a , b ){  
+
+        if ( typeof a == "number" && typeof b == "number" ) return a - b; 
+
+        // 천단위 쉼표와 공백문자만 삭제하기.  
+        var a = ( a + "" ).replace( /[,\s\xA0]+/g , "" ); 
+        var b = ( b + "" ).replace( /[,\s\xA0]+/g , "" ); 
+
+        var numA = parseFloat( a ) + ""; 
+        var numB = parseFloat( b ) + ""; 
+
+        if ( numA == "NaN" || numB == "NaN" || a != numA || b != numB ) return false; 
+
+        return parseFloat( a ) - parseFloat( b ); 
+} 
+
+
+/* changeForSorting() : 문자열 바꾸기. */ 
+
+function changeForSorting( first , second ){  
+
+        // 문자열의 복사본 만들기. 
+        var a = first.toString().replace( /[\s\xA0]+/g , " " ); 
+        var b = second.toString().replace( /[\s\xA0]+/g , " " ); 
+
+        var change = { first : a, second : b }; 
+
+        if ( a.search( /\d/ ) < 0 || b.search( /\d/ ) < 0 || a.length == 0 || b.length == 0 ) return change; 
+
+        var regExp = /(\d),(\d)/g; // 천단위 쉼표를 찾기 위한 정규식. 
+
+        a = a.replace( regExp , "$1" + "$2" ); 
+        b = b.replace( regExp , "$1" + "$2" ); 
+
+        var unit = 0; 
+        var aNb = a + " " + b; 
+        var numbers = aNb.match( /\d+/g ); // 문자열에 들어있는 숫자 찾기 
+
+        for ( var x = 0; x < numbers.length; x++ ){ 
+
+                var length = numbers[ x ].length; 
+                if ( unit < length ) unit = length; 
+        } 
+
+        var addZero = function( string ){ // 숫자들의 단위 맞추기 
+
+                var match = string.match( /^0+/ ); 
+
+                if ( string.length == unit ) return ( match == null ) ? string : match + string; 
+
+                var zero = "0"; 
+
+                for ( var x = string.length; x < unit; x++ ) string = zero + string; 
+
+                return ( match == null ) ? string : match + string; 
+        }; 
+
+        change.first = a.replace( /\d+/g, addZero ); 
+        change.second = b.replace( /\d+/g, addZero ); 
+
+        return change; 
+} 
+
+
+/* byLocale() */ 
+
+function byLocale(){ 
+
+        var compare = function( a , b ){ 
+
+                var sorting = sortingNumber( a , b ); 
+
+                if ( typeof sorting == "number" ) return sorting; 
+
+                var change = changeForSorting( a , b ); 
+
+                var a = change.first; 
+                var b = change.second; 
+
+                return a.localeCompare( b ); 
+        }; 
+
+        var ascendingOrder = function( a , b ){  return compare( a , b );  }; 
+        var descendingOrder = function( a , b ){  return compare( b , a );  }; 
+
+        return { ascending : ascendingOrder, descending : descendingOrder }; 
+} 
+
+
+/* replacement() */ 
+ 
+function replacement( parent ){  
+        var tagName = parent.tagName.toLowerCase(); 
+        if ( tagName == "table" ) parent = parent.tBodies[ 0 ]; 
+        tagName = parent.tagName.toLowerCase(); 
+        if ( tagName == "tbody" ) var children = parent.rows; 
+        else var children = parent.getElementsByTagName( "li" ); 
+
+        var replace = { 
+                order : byLocale(), 
+                index : false, 
+                array : function(){ 
+                        var array = [ ]; 
+                        for ( var x = 0; x < children.length; x++ ) array[ x ] = children[ x ]; 
+                        return array; 
+                }(), 
+                checkIndex : function( index ){ 
+                        if ( index ) this.index = parseInt( index, 10 ); 
+                        var tagName = parent.tagName.toLowerCase(); 
+                        if ( tagName == "tbody" && ! index ) this.index = 0; 
+                }, 
+                getText : function( child ){ 
+                        if ( this.index ) child = child.cells[ this.index ]; 
+                        return getTextByClone( child ); 
+                }, 
+                setChildren : function(){ 
+                        var array = this.array; 
+                        while ( parent.hasChildNodes() ) parent.removeChild( parent.firstChild ); 
+                        for ( var x = 0; x < array.length; x++ ) parent.appendChild( array[ x ] ); 
+                }, 
+                ascending : function( index ){ // 오름차순 
+                        this.checkIndex( index ); 
+                        var _self = this; 
+                        var order = this.order; 
+                        var ascending = function( a, b ){ 
+                                var a = _self.getText( a ); 
+                                var b = _self.getText( b ); 
+                                return order.ascending( a, b ); 
+                        }; 
+                        this.array.sort( ascending ); 
+                        this.setChildren(); 
+                }, 
+                descending : function( index ){ // 내림차순
+                        this.checkIndex( index ); 
+                        var _self = this; 
+                        var order = this.order; 
+                        var descending = function( a, b ){ 
+                                var a = _self.getText( a ); 
+                                var b = _self.getText( b ); 
+                                return order.descending( a, b ); 
+                        }; 
+                        this.array.sort( descending ); 
+                        this.setChildren(); 
+                } 
+        }; 
+        return replace; 
+} 
+
+function getTextByClone( tag ){  
+        var clone = tag.cloneNode( true ); // 태그의 복사본 만들기. 
+        var br = clone.getElementsByTagName( "br" ); 
+        while ( br[0] ){ 
+                var blank = document.createTextNode( " " ); 
+                clone.insertBefore( blank , br[0] ); 
+                clone.removeChild( br[0] ); 
+        } 
+        var isBlock = function( tag ){ 
+                var display = ""; 
+                if ( window.getComputedStyle ) display = window.getComputedStyle ( tag, "" )[ "display" ]; 
+                else display = tag.currentStyle[ "display" ]; 
+                return ( display == "block" ) ? true : false; 
+        }; 
+        var children = clone.getElementsByTagName( "*" ); 
+        for ( var x = 0; x < children.length; x++){ 
+                var child = children[ x ]; 
+                if ( ! ("value" in child) && isBlock(child) ) child.innerHTML = child.innerHTML + " "; 
+        } 
+        var textContent = ( "textContent" in clone ) ? clone.textContent : clone.innerText; 
+        return textContent; 
+}
+</script>
+
+</body>
+</html>

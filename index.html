@@ -3,29 +3,29 @@
 
 <html lang="en">
 <head>
-	<title>New GCN</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>New GCN</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!--===============================================================================================-->
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="{% static 'testapp/vendor/animate/animate.css' %}">
+    <link rel="stylesheet" type="text/css" href="static/testapp/vendor/animate/animate.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="{% static 'testapp/vendor/select2/select2.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="static/testapp/vendor/select2/select2.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <script>
         $(document).ready(function(){
             $('[data-toggle="tooltip"]').tooltip();
         });
     </script>
-    <link rel="stylesheet" type="text/css" href="{% static 'testapp/css/util.css' %}?{% now "U" %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'testapp/css/main.css' %}?{% now "U" %}">
+    <link rel="stylesheet" type="text/css" href="static/testapp/css/util.css">
+    <link rel="stylesheet" type="text/css" href="static/testapp/css/main.css">
     
 </head>
 <body onload="loadXMLDoc(2019)">	
@@ -75,15 +75,19 @@
 
 
 <!--===============================================================================================-->	
-	<script type="text/javascript", src="{% static 'testapp/vendor/jquery/jquery-3.2.1.min.js' %}"></script>
+    <link rel="stylesheet" type="text/css" href="static/testapp/vendor/animate/animate.css">
 <!--===============================================================================================-->
-	<script type="text/javascript", src="{% static 'testapp/vendor/bootstrap/js/popper.js' %}"></script>
-	<script type="text/javascript", src="{% static 'testapp/vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+    <link rel="stylesheet" type="text/css" href="static/testapp/vendor/select2/select2.min.css">
+<!--===============================================================================================-->  
+    <script type="text/javascript", src="static/testapp/vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
-	<script type="text/javascript", src="{% static 'testapp/vendor/select2/select2.min.js' %}"></script>
+    <script type="text/javascript", src="static/testapp/vendor/bootstrap/js/popper.js"></script>
+    <script type="text/javascript", src="static/testapp/vendor/bootstrap/js/bootstrap.min.js"></script>
 <!--===============================================================================================-->
-	<script type="text/javascript", src="{% static 'testapp/js/main.js' %}"></script>
-	<script type="text/javascript", src="{% static 'testapp/js/sub.js' %}"></script>
+    <script type="text/javascript", src="static/testapp/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+    <script type="text/javascript", src="static/testapp/js/main.js"></script>
+    <script type="text/javascript", src="static/testapp/js/sub.js"></script>
 
 <!--===============================================================================================-->
 
@@ -96,7 +100,7 @@ function loadXMLDoc(year) {
       makeTable(this, year);
     }
   };
-  xmlhttp.open("GET", "{% static 'testapp/xml_table.xml' %}?{% now "U" %}", true);
+  xmlhttp.open("GET", "xml_table.xml?{% now "U" %}", true);
   xmlhttp.send();
 }
 
