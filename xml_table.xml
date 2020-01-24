@@ -56,14 +56,14 @@
     <Redshift> </Redshift>
     <Inst>
       <Tel link="/gcn3/23694" obs="on">BOOTES-4/MET</Tel>
-      <Tel link="/gcn3/23703" obs="off">GWAC</Tel>
       <Tel link="/gcn3/23723" obs="on">Liverpool</Tel>
-      <Tel link="/gcn3/23705" obs="off">MITSuME</Tel>
       <Tel link="/gcn3/23722" obs="on">Mondy</Tel>
       <Tel link="/gcn3/23713" obs="on">NOT</Tel>
       <Tel link="/gcn3/23721" obs="on">Swift/BAT</Tel>
-      <Tel link="/gcn3/23720" obs="off">Swift/UVOT</Tel>
       <Tel link="/gcn3/23730" obs="on">Swift/XRT</Tel>
+      <Tel link="/gcn3/23703" obs="off">GWAC</Tel>
+      <Tel link="/gcn3/23705" obs="off">MITSuME</Tel>
+      <Tel link="/gcn3/23720" obs="off">Swift/UVOT</Tel>
     </Inst>
     <MW>
       <Band obs="off">radio</Band>
@@ -88,9 +88,7 @@
     <Error link="/gcn3/23682" reporter="GROND" units="arcmin">0.25 &quot;</Error>
     <Redshift error="0.0001" link="/gcn3/23680" reporter="VLT/X-shooter">2.6232</Redshift>
     <Inst>
-      <Tel link="/gcn3/23731" obs="off">DOAO</Tel>
       <Tel link="/gcn3/23682" obs="on">GROND</Tel>
-      <Tel link="/gcn3/23731" obs="off">LOAO</Tel>
       <Tel link="/gcn3/23718" obs="on">Mondy</Tel>
       <Tel link="/gcn3/23697" obs="on">NOT</Tel>
       <Tel link="/gcn3/23687" obs="on">OSN</Tel>
@@ -98,6 +96,8 @@
       <Tel link="/gcn3/23719" obs="on">Swift/UVOT</Tel>
       <Tel link="/gcn3/23683" obs="on">Swift/XRT</Tel>
       <Tel link="/gcn3/23680" obs="on">VLT/X-shooter</Tel>
+      <Tel link="/gcn3/23731" obs="off">DOAO</Tel>
+      <Tel link="/gcn3/23731" obs="off">LOAO</Tel>
     </Inst>
     <MW>
       <Band obs="off">radio</Band>
@@ -152,14 +152,14 @@
     <Error link="/gcn3/23652" reporter="Swift/XRT" units="arcmin">1.80 &quot;</Error>
     <Redshift> </Redshift>
     <Inst>
+      <Tel link="/gcn3/23666" obs="on">Fermi/GBM</Tel>
+      <Tel link="/gcn3/23659" obs="on">Swift/BAT</Tel>
+      <Tel link="/gcn3/23662" obs="on">Swift/XRT</Tel>
       <Tel link="/gcn3/23655" obs="off">BOOTES-5/JGT</Tel>
       <Tel link="/gcn3/23656" obs="off">COATLI</Tel>
-      <Tel link="/gcn3/23666" obs="on">Fermi/GBM</Tel>
       <Tel link="/gcn3/23711" obs="off">MITSuME</Tel>
       <Tel link="/gcn3/23657" obs="off">Mondy</Tel>
-      <Tel link="/gcn3/23659" obs="on">Swift/BAT</Tel>
       <Tel link="/gcn3/23664" obs="off">Swift/UVOT</Tel>
-      <Tel link="/gcn3/23662" obs="on">Swift/XRT</Tel>
     </Inst>
     <MW>
       <Band obs="off">radio</Band>
@@ -185,10 +185,10 @@
     <Redshift> </Redshift>
     <Inst>
       <Tel link="/gcn3/23658" obs="on">Fermi/GBM</Tel>
-      <Tel link="/gcn3/23649" obs="off">MITSuME</Tel>
       <Tel link="/gcn3/23653" obs="on">Swift/BAT</Tel>
-      <Tel link="/gcn3/23673" obs="off">Swift/UVOT</Tel>
       <Tel link="/gcn3/23645" obs="on">Swift/XRT</Tel>
+      <Tel link="/gcn3/23649" obs="off">MITSuME</Tel>
+      <Tel link="/gcn3/23673" obs="off">Swift/UVOT</Tel>
     </Inst>
     <MW>
       <Band obs="off">radio</Band>
@@ -255,13 +255,13 @@
     <Error link="/gcn3/23605" reporter="IceCube" units="deg">2.50 &amp;deg;</Error>
     <Redshift> </Redshift>
     <Inst>
+      <Tel link="/gcn3/23613" obs="on">IceCube</Tel>
       <Tel link="/gcn3/23611" obs="off">ANTARES</Tel>
       <Tel link="/gcn3/23667" obs="off">AstroSat/CZTI</Tel>
       <Tel link="/gcn3/23621" obs="off">Fermi/GBM</Tel>
       <Tel link="/gcn3/23608" obs="off">Fermi/LAT</Tel>
       <Tel link="/gcn3/23689" obs="off">INTEGRAL/IBIS</Tel>
       <Tel link="/gcn3/23689" obs="off">INTEGRAL/SPI</Tel>
-      <Tel link="/gcn3/23613" obs="on">IceCube</Tel>
       <Tel link="/gcn3/23610" obs="off">MASTER</Tel>
       <Tel link="/gcn3/23641" obs="off">Swift/XRT</Tel>
     </Inst>
@@ -288,12 +288,12 @@
     <Error link="/gcn3/23603" reporter="Swift/XRT" units="arcmin">1.70 &quot;</Error>
     <Redshift> </Redshift>
     <Inst>
-      <Tel link="/gcn3/23607" obs="off">Bassano Bresciano</Tel>
       <Tel link="/gcn3/23631" obs="on">CALET/CGBM</Tel>
       <Tel link="/gcn3/23612" obs="on">Konus/Wind</Tel>
       <Tel link="/gcn3/23606" obs="on">Swift/BAT</Tel>
-      <Tel link="/gcn3/23684" obs="off">Swift/UVOT</Tel>
       <Tel link="/gcn3/23604" obs="on">Swift/XRT</Tel>
+      <Tel link="/gcn3/23607" obs="off">Bassano Bresciano</Tel>
+      <Tel link="/gcn3/23684" obs="off">Swift/UVOT</Tel>
     </Inst>
     <MW>
       <Band obs="off">radio</Band>
