@@ -22,6 +22,7 @@
       <Tel link="/gcn3/23727" obs="on">Mondy</Tel>
       <Tel link="/gcn3/23693" obs="on">MASTER</Tel>
       <Tel link="/gcn3/23701" obs="on">MAGIC</Tel>
+      <Tel link="/gcn3/23732" obs="on">LSGT</Tel>
       <Tel link="/gcn3/23716" obs="on">Insight-HXMT/HE</Tel>
       <Tel link="/gcn3/23714" obs="on">INTEGRAL/SPI</Tel>
       <Tel link="/gcn3/23708" obs="on">GTC</Tel>
@@ -94,7 +95,9 @@
       <Tel link="/gcn3/23687" obs="on">OSN</Tel>
       <Tel link="/gcn3/23697" obs="on">NOT</Tel>
       <Tel link="/gcn3/23718" obs="on">Mondy</Tel>
+      <Tel link="/gcn3/23731" obs="off">LOAO</Tel>
       <Tel link="/gcn3/23682" obs="on">GROND</Tel>
+      <Tel link="/gcn3/23731" obs="off">DOAO</Tel>
     </Inst>
     <MW>
       <Band obs="off">radio</Band>
