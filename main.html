@@ -81,15 +81,15 @@
 
 
 <!--===============================================================================================-->  
-    <script type="text/javascript", src="{% static 'testapp/vendor/jquery/jquery-3.2.1.min.js' %}"></script>
+    <script type="text/javascript", src="static/testapp/vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
-    <script type="text/javascript", src="{% static 'testapp/vendor/bootstrap/js/popper.js' %}"></script>
-    <script type="text/javascript", src="{% static 'testapp/vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script type="text/javascript", src="static/testapp/vendor/bootstrap/js/popper.js"></script>
+    <script type="text/javascript", src="static/testapp/vendor/bootstrap/js/bootstrap.min.js"></script>
 <!--===============================================================================================-->
-    <script type="text/javascript", src="{% static 'testapp/vendor/select2/select2.min.js' %}"></script>
+    <script type="text/javascript", src="static/testapp/vendor/select2/select2.min.js"></script>
 <!--===============================================================================================-->
-    <script type="text/javascript", src="{% static 'testapp/js/main.js' %}"></script>
-    <script type="text/javascript", src="{% static 'testapp/js/sub.js' %}"></script>
+    <script type="text/javascript", src="static/testapp/js/main.js"></script>
+    <script type="text/javascript", src="static/testapp/js/sub.js"></script>
 
 <!--===============================================================================================-->
 
@@ -102,7 +102,7 @@ function loadXMLDoc(year, src) {
       makeTable(this, year, src);
     }
   };
-  xmlhttp.open("GET", "{% static 'testapp/xml_table.xml' %}?{% now "U" %}", true);
+  xmlhttp.open("GET", "xml_table.xml", true);
   xmlhttp.send();
 }
 
