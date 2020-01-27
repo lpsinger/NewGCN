@@ -27,30 +27,21 @@
     <link rel="stylesheet" type="text/css" href="static/testapp/css/main.css">
     
 </head>
-
-<body onload="loadXMLDoc(19, 0)">    
+<body onload="loadXMLDoc(2019)">    
 
     <div class="limiter">
         <div class="wrap-table100">
             <div class="table100 ver4">
-                <h1 style="font-family: 'Arial Black'; font-size: 40pt; padding-bottom: 20pt;"> GCN Circular at First Glance </h1> 
+                <h1 style="font-family: 'Arial Black'; font-size: 40pt; padding-bottom: 20pt;"> GCN Circular at First Glance </h1>
                 <h1 style="font-family: 'Arial Black'; font-size: 10pt; padding-bottom: 10pt;"><a href="https://gcn.gsfc.nasa.gov/gcn3_archive.html"    style="color:#808080" target="_blank">Link to GCN Circulars Archive</a></h1>
                 <table>
                     <tr>
                         <td>
-                            <h1 style="font-family: 'Arial Black'; font-size: 10pt; color:#808080">List of GCN circulars in |
-                            <button type="button" onclick="loadXMLDoc(18, 0)">2018</button> |
-                            <button type="button" onclick="loadXMLDoc(19, 0)">2019</button> |
-                            <button type="button" onclick="loadXMLDoc(20, 0)">2020</button> |
+                        <h1 style="font-family: 'Arial Black'; font-size: 10pt"><a href="https://gcn.gsfc.nasa.gov/gcn3_archive.html"   style="color:#808080" target="_blank">List of GCN in </a>
+                        <button type="button" onclick="loadXMLDoc(2018)">2018</button>
+                        <button type="button" onclick="loadXMLDoc(2019)">2019</button>
+                        <button type="button" onclick="loadXMLDoc(2020)">2020</button>
                         </h1>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h1 style="font-family: 'Arial Black'; font-size: 10pt; color:#808080">List of GCN circulars of </a> |
-                            <button type="button" onclick="loadXMLDoc(0, 1)">Gamma-ray bursts (GRBs)</button> |
-                            <button type="button" onclick="loadXMLDoc(0, 2)">Gravitational waves (GWs)</button> |
-                            <button type="button" onclick="loadXMLDoc(0, 3)">Neutrinos (&nu;)</button> |
                         </td>
                         <td>
                             <h1 style="font-family: 'Arial-black'; font-size: 10pt; text-align: right; color:#808080">Made by Donggeun Tak (TACH) <a href="mailto:donggeun.tak@gmail.com" style="color:#808080" target="_blank"><i class="fa fa-envelope-o"></i></a>
@@ -83,6 +74,10 @@
 
 
 <!--===============================================================================================-->  
+    <link rel="stylesheet" type="text/css" href="static/testapp/vendor/animate/animate.css">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="static/testapp/vendor/select2/select2.min.css">
+<!--===============================================================================================-->  
     <script type="text/javascript", src="static/testapp/vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
     <script type="text/javascript", src="static/testapp/vendor/bootstrap/js/popper.js"></script>
@@ -97,32 +92,23 @@
 
 <script type="text/javascript">
 
-function loadXMLDoc(year, src) {
+function loadXMLDoc(year) {
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-      makeTable(this, year, src);
+      makeTable(this, year);
     }
   };
   xmlhttp.open("GET", "xml_table.xml", true);
   xmlhttp.send();
 }
 
-function makeTable(xml, year, src) {
+function makeTable(xml, year) {
   var i, j;
   var xmlDoc = xml.responseXML;
   var table="<tr class='row100 body'>";
-  if ((year == 0) && (src == 0)){
-    var x = xmlDoc.getElementsByTagName("Transient");
-  }
-  else if (src == 0){
-    var x = xmlDoc.getElementsByTagName("Year"+year);
-  }
-  else if (year == 0){
-    var x = xmlDoc.getElementsByTagName("Src"+src);
-  }
-
-
+  var x = xmlDoc.getElementsByTagName("T"+year);
+  
   for (i = 0; i <x.length; i++) { 
 
     table += "<td class='cell100 evt'><a href='https://gcn.gsfc.nasa.gov" +
@@ -180,10 +166,10 @@ function makeTable(xml, year, src) {
     table += "</td>"
 
     table += "</tr>"  
-  
+
   }
   
-document.getElementById("GCNtable").innerHTML = table;
+  document.getElementById("GCNtable").innerHTML = table;
 }
 
 
