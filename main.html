@@ -27,88 +27,100 @@
     <link rel="stylesheet" type="text/css" href="static/testapp/css/main.css">
     
 </head>
-<body onload="loadXMLDoc(2019)">	
+<body onload="loadXMLDoc(19, 0)">   
 
-	<div class="limiter">
-		<div class="wrap-table100">
-			<div class="table100 ver4">
+    <div class="limiter">
+        <div class="wrap-table100">
+            <div class="table100 ver4">
                 <h1 style="font-family: 'Arial Black'; font-size: 40pt; padding-bottom: 20pt;"> GCN Circular at First Glance </h1>
-                <h1 style="font-family: 'Arial Black'; font-size: 10pt; padding-bottom: 10pt;"><a href="https://gcn.gsfc.nasa.gov/gcn3_archive.html" 	style="color:#808080" target="_blank">Link to GCN Circulars Archive</a></h1>
+                <h1 style="font-family: 'Arial Black'; font-size: 10pt; padding-bottom: 10pt;"><a href="https://gcn.gsfc.nasa.gov/gcn3_archive.html"    style="color:#808080" target="_blank">Link to GCN Circulars Archive</a></h1>
                 <table>
-                	<tr>
-                		<td>
-		                <h1 style="font-family: 'Arial Black'; font-size: 10pt"><a href="https://gcn.gsfc.nasa.gov/gcn3_archive.html" 	style="color:#808080" target="_blank">List of GCN in </a>
-		                <button type="button" onclick="loadXMLDoc(2018)">2018</button>
-						<button type="button" onclick="loadXMLDoc(2019)">2019</button>
-						<button type="button" onclick="loadXMLDoc(2020)">2020</button>
-						</h1>
-						</td>
-						<td>
-							<h1 style="font-family: 'Arial-black'; font-size: 10pt; text-align: right; color:#808080">Made by Donggeun Tak (TACH) <a href="mailto:donggeun.tak@gmail.com" style="color:#808080" target="_blank"><i class="fa fa-envelope-o"></i></a>
-							</h1>
-						</td>
-					</tr>
-				</table>
-				<table id ="NewGCN">
-					<thead>
-						<tr class="row100 head">
-							<th class="cell100 evt" style="text-align:center;">Event Name</th>
-							<th class="cell100 t0" style="text-align:center;">Trigger Time</th>
-							<th class="cell100 ra" style="text-align:center;">R.A.</th>
-							<th class="cell100 dec" style="text-align:center;">Dec.</th>
+                    <tr>
+                        <td>
+                            <h1 style="font-family: 'Arial Black'; font-size: 10pt; color:#808080">List of GCN circulars in
+                            <button type="button" onclick="loadXMLDoc(18, 0)">2018</button> |
+                            <button type="button" onclick="loadXMLDoc(19, 0)">2019</button> |
+                            <button type="button" onclick="loadXMLDoc(20, 0)">2020</button> |
+                        </h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h1 style="font-family: 'Arial Black'; font-size: 10pt; color:#808080">List of GCN circulars of </a>
+                            <button type="button" onclick="loadXMLDoc(0, 1)">Gamma-ray bursts (GRBs)</button> |
+                            <button type="button" onclick="loadXMLDoc(0, 2)">Gravitational waves (GWs)</button> |
+                            <button type="button" onclick="loadXMLDoc(0, 3)">Neutrinos (&nu;)</button>
+                        </td>
+                        <td>
+                            <h1 style="font-family: 'Arial-black'; font-size: 10pt; text-align: right; color:#808080">Made by Donggeun Tak (TACH) <a href="mailto:donggeun.tak@gmail.com" style="color:#808080" target="_blank"><i class="fa fa-envelope-o"></i></a>
+                            </h1>
+                        </td>
+                    </tr>
+                </table>
+                <table id ="NewGCN">
+                    <thead>
+                        <tr class="row100 head">
+                            <th class="cell100 evt" style="text-align:center;">Event Name</th>
+                            <th class="cell100 t0" style="text-align:center;">Trigger Time</th>
+                            <th class="cell100 ra" style="text-align:center;">R.A.</th>
+                            <th class="cell100 dec" style="text-align:center;">Dec.</th>
                             <th class="cell100 err" style="text-align:center;">Error Circle</th>
-							<th class="cell100 z" style="text-align:center;">Redshift</th>
-							<th class="cell100 tel" style="text-align:center;">Telescopes/observatories</th>
-							<th class="cell100 mw" style="text-align:center;">Wavelength</th>
-							<th class="cell100 mm" style="text-align:center;">Messenger</th>
-						</tr>
-					</thead>
-					<tbody id = "GCNtable">
-					</tbody>
-				</table>
-			</div>
-		</div>
-	</div>
+                            <th class="cell100 z" style="text-align:center;">Redshift</th>
+                            <th class="cell100 tel" style="text-align:center;">Telescopes/observatories</th>
+                            <th class="cell100 mw" style="text-align:center;">Wavelength</th>
+                            <th class="cell100 mm" style="text-align:center;">Messenger</th>
+                        </tr>
+                    </thead>
+                    <tbody id = "GCNtable">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 
 
 
 
-<!--===============================================================================================-->	
-    <link rel="stylesheet" type="text/css" href="static/testapp/vendor/animate/animate.css">
-<!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="static/testapp/vendor/select2/select2.min.css">
 <!--===============================================================================================-->  
-    <script type="text/javascript", src="static/testapp/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript", src="{% static 'testapp/vendor/jquery/jquery-3.2.1.min.js' %}"></script>
 <!--===============================================================================================-->
-    <script type="text/javascript", src="static/testapp/vendor/bootstrap/js/popper.js"></script>
-    <script type="text/javascript", src="static/testapp/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript", src="{% static 'testapp/vendor/bootstrap/js/popper.js' %}"></script>
+    <script type="text/javascript", src="{% static 'testapp/vendor/bootstrap/js/bootstrap.min.js' %}"></script>
 <!--===============================================================================================-->
-    <script type="text/javascript", src="static/testapp/vendor/select2/select2.min.js"></script>
+    <script type="text/javascript", src="{% static 'testapp/vendor/select2/select2.min.js' %}"></script>
 <!--===============================================================================================-->
-    <script type="text/javascript", src="static/testapp/js/main.js"></script>
-    <script type="text/javascript", src="static/testapp/js/sub.js"></script>
+    <script type="text/javascript", src="{% static 'testapp/js/main.js' %}"></script>
+    <script type="text/javascript", src="{% static 'testapp/js/sub.js' %}"></script>
 
 <!--===============================================================================================-->
 
 <script type="text/javascript">
 
-function loadXMLDoc(year) {
+function loadXMLDoc(year, src) {
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-      makeTable(this, year);
+      makeTable(this, year, src);
     }
   };
-  xmlhttp.open("GET", "xml_table.xml", true);
+  xmlhttp.open("GET", "{% static 'testapp/xml_table.xml' %}?{% now "U" %}", true);
   xmlhttp.send();
 }
 
-function makeTable(xml, year) {
+function makeTable(xml, year, src) {
   var i, j;
   var xmlDoc = xml.responseXML;
   var table="<tr class='row100 body'>";
-  var x = xmlDoc.getElementsByTagName("T"+year);
-  
+  if ((year == 0) && (src == 0)){
+    var x = xmlDoc.getElementsByTagName("Transient");
+  }
+  else if (src == 0){
+    var x = xmlDoc.getElementsByTagName("Year"+year);
+  }
+  else if (year == 0){
+    var x = xmlDoc.getElementsByTagName("Src"+src);
+  }
+
   for (i = 0; i <x.length; i++) { 
 
     table += "<td class='cell100 evt'><a href='https://gcn.gsfc.nasa.gov" +
