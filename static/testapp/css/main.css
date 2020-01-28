@@ -34,15 +34,24 @@ a {
 	-webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
+  color:#808080
 }
 
 a:focus {
 	outline: none !important;
+	color:#808080
 
 }
 
 a:hover {
 	text-decoration: none;
+	color:black;
+}
+
+div:hover{
+	text-decoration: none;
+	color:black;
+	cursor: pointer;
 }
 
 /* ------------------------------------ */
@@ -112,6 +121,14 @@ table {
 th, td {
   font-weight: unset;
   padding-right: 10px;
+}
+
+tr:hover td {
+    background: #c7d4dd !important;
+}
+
+td:hover a:active {
+  color: black !important;
 }
 
 .evt {
