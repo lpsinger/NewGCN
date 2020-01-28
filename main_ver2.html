@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>New GCN</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--===============================================================================================-->
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="static/testapp/vendor/animate/animate.css">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="static/testapp/vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+    <link rel="stylesheet" type="text/css" href="static/testapp/css/util.css">
+    <link rel="stylesheet" type="text/css" href="static/testapp/css/main.css">
+    
+</head>
+
+<body onload="loadXMLDoc(0, 0)">   
+
+    <div class="limiter">
+        <div class="wrap-table100">
+            <div class="table100 ver4">
+                <h1 style="font-family: 'Arial Black'; font-size: 40pt; padding-bottom: 1pt;"> GCN Circular Viewer </h1> 
+                <h1 style="font-family: 'Arial Black'; font-size: 20pt; padding-bottom: 10pt; color:#808080"> Time-domain Astronomy Coordination Hub (TACH)</h1> 
+                <h1 style="font-family: 'Arial Black'; font-size: 10pt; padding-bottom: 10pt;"><a href="https://gcn.gsfc.nasa.gov/gcn3_archive.html"    style="color:#808080" target="_blank">Link to GCN Circulars Archive</a></h1>
+                <table>
+                    <tr>
+                        <td>
+                            <h1 style="font-family: 'Arial Black'; font-size: 10pt; color:#808080">List of GCN circulars in |
+                            <button type="button" onclick="loadXMLDoc(18, 0)">2018</button> |
+                            <button type="button" onclick="loadXMLDoc(19, 0)">2019</button> |
+                            <button type="button" onclick="loadXMLDoc(20, 0)">2020</button> |
+                            <button type="button" onclick="loadXMLDoc(0, 0)">All</button> |
+                        </h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h1 style="font-family: 'Arial Black'; font-size: 10pt; color:#808080">List of GCN circulars of </a> |
+                            <button type="button" onclick="loadXMLDoc(0, 1)">Gamma-ray bursts (GRBs)</button> |
+                            <button type="button" onclick="loadXMLDoc(0, 2)">Gravitational waves (GWs)</button> |
+                            <button type="button" onclick="loadXMLDoc(0, 3)">Neutrinos (&nu;)</button> |
+                            <button type="button" onclick="loadXMLDoc(0, 0)">All</button> |
+                        </td>
+                        <td>
+                            <h1 style="font-family: 'Arial-black'; font-size: 10pt; text-align: right; color:#808080">Made by Donggeun Tak<a href="mailto:donggeun.tak@gmail.com" style="color:#808080" target="_blank"><i class="fa fa-envelope-o"></i></a>
+                            </h1>
+                        </td>
+                    </tr>
+                </table>
+                <table id ="NewGCN">
+                    <thead>
+                        <tr class="row100 head">
+                            <th class="cell100 evt" style="text-align:center;">Event Name</th>
+                            <th class="cell100 t0" style="text-align:center;">Trigger Time</th>
+                            <th class="cell100 ra" style="text-align:center;">R.A.</th>
+                            <th class="cell100 dec" style="text-align:center;">Dec.</th>
+                            <th class="cell100 err" style="text-align:center;">Error Circle</th>
+                            <th class="cell100 z" style="text-align:center;">Redshift</th>
+                            <th class="cell100 tel" style="text-align:center;">Telescopes/observatories</th>
+                            <th class="cell100 mw" style="text-align:center;">Wavelength</th>
+                            <th class="cell100 mm" style="text-align:center;">Messenger</th>
+                        </tr>
+                    </thead>
+                    <tbody id = "GCNtable">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<!--===============================================================================================-->  
+    <link rel="stylesheet" type="text/css" href="static/testapp/vendor/animate/animate.css">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="static/testapp/vendor/select2/select2.min.css">
+<!--===============================================================================================-->  
+    <script type="text/javascript", src="static/testapp/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+    <script type="text/javascript", src="static/testapp/vendor/bootstrap/js/popper.js"></script>
+    <script type="text/javascript", src="static/testapp/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+    <script type="text/javascript", src="static/testapp/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+    <script type="text/javascript", src="static/testapp/js/main.js"></script>
+    <script type="text/javascript", src="static/testapp/js/sub.js"></script>
+
+<!--===============================================================================================-->
+
+<script type="text/javascript">
+
+function loadXMLDoc(year, src) {
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      makeTable(this, year, src);
+    }
+  };
+  xmlhttp.open("GET", "xml_table.xml", true);
+  xmlhttp.send();
+}
+
+function makeTable(xml, year, src) {
+  var i, j;
+  var xmlDoc = xml.responseXML;
+  var table="<tr class='row100 body'>";
+  if ((year == 0) && (src == 0)){
+    var x = xmlDoc.getElementsByTagName("Transient");
+  }
+  else if (src == 0){
+    var x = xmlDoc.getElementsByTagName("Year"+year);
+  }
+  else if (year == 0){
+    var x = xmlDoc.getElementsByTagName("Src"+src);
+  }
+
+
+  for (i = 0; i <x.length; i++) { 
+
+    table += "<td class='cell100 evt'><a href='https://gcn.gsfc.nasa.gov" +
+    x[i].getElementsByTagName("Event")[0].getAttribute("link") + ".gcn3' style='color:#808080' target='gcn'>" +
+    x[i].getElementsByTagName("Event")[0].childNodes[0].nodeValue + "</a></td>";
+    
+    table += "<td class='cell100 t0'><a href='https://gcn.gsfc.nasa.gov" +
+    x[i].getElementsByTagName("T0")[0].getAttribute("link") + ".gcn3' style='color:#808080' target='gcn'><div data-placement='bottom' data-toggle='tooltip' title='" + x[i].getElementsByTagName("T0")[0].getAttribute("reporter") + "'>" + 
+    x[i].getElementsByTagName("T0")[0].childNodes[0].nodeValue + "</div></a></td>";
+
+    table += "<td class='cell100 ra'><a href='https://gcn.gsfc.nasa.gov" +
+    x[i].getElementsByTagName("RA")[0].getAttribute("link") + ".gcn3' style='color:#808080' target='gcn'><div data-placement='bottom' data-toggle='tooltip' title='" + x[i].getElementsByTagName("RA")[0].getAttribute("hms") + "'>" + 
+    x[i].getElementsByTagName("RA")[0].childNodes[0].nodeValue + "</div></a></td>";
+
+    table += "<td class='cell100 dec'><a href='https://gcn.gsfc.nasa.gov" +
+    x[i].getElementsByTagName("DEC")[0].getAttribute("link") + ".gcn3' style='color:#808080' target='gcn'><div data-placement='bottom' data-toggle='tooltip' title='" + x[i].getElementsByTagName("DEC")[0].getAttribute("dms") + "'>" + 
+    x[i].getElementsByTagName("DEC")[0].childNodes[0].nodeValue + "</div></a></td>";
+
+    table += "<td class='cell100 err'><a href='https://gcn.gsfc.nasa.gov" +
+    x[i].getElementsByTagName("Error")[0].getAttribute("link") + ".gcn3' style='color:#808080' target='gcn'><div data-placement='bottom' data-toggle='tooltip' title='" + x[i].getElementsByTagName("Error")[0].getAttribute("reporter") + "'>" + 
+    x[i].getElementsByTagName("Error")[0].childNodes[0].nodeValue + "</div></a></td>";
+
+
+    table += "<td class='cell100 z'><a href='https://gcn.gsfc.nasa.gov" +
+    x[i].getElementsByTagName("Redshift")[0].getAttribute("link") + ".gcn3' style='color:#808080' target='gcn'><div data-placement='bottom' data-toggle='tooltip' title='" + x[i].getElementsByTagName("Redshift")[0].getAttribute("reporter") + "'>" + 
+    x[i].getElementsByTagName("Redshift")[0].childNodes[0].nodeValue + "</div></a></td>";
+
+    
+    table += "<td class='cell100 tel'>"
+    y = x[i].getElementsByTagName("Tel")
+    for (j = 0; j <y.length; j++) {
+        table += "<a href='https://gcn.gsfc.nasa.gov" + 
+        x[i].getElementsByTagName("Tel")[j].getAttribute("link") + ".gcn3' style='color:#808080' target='gcn'><div class='box_tel_" +
+        x[i].getElementsByTagName("Tel")[j].getAttribute("obs") + "'>" +
+        x[i].getElementsByTagName("Tel")[j].childNodes[0].nodeValue + "</div></a>";
+    }
+    table += "</td>"
+
+    table += "<td class='cell100 mw'>"
+    y = x[i].getElementsByTagName("Band")
+    for (j = 0; j <y.length; j++) {
+        table += "<div class='box_" +
+        x[i].getElementsByTagName("Band")[j].getAttribute("obs") + "'>" +
+        x[i].getElementsByTagName("Band")[j].childNodes[0].nodeValue + "</div></a>";
+    }
+    table += "</td>"
+
+    table += "<td class='cell100 mw'>"
+    y = x[i].getElementsByTagName("Mgr")
+    for (j = 0; j <y.length; j++) {
+        table += "<div class='box_" +
+        x[i].getElementsByTagName("Mgr")[j].getAttribute("obs") + "'>" +
+        x[i].getElementsByTagName("Mgr")[j].childNodes[0].nodeValue + "</div></a>";
+    }
+    table += "</td>"
+
+    table += "</tr>"  
+
+  }
+  
+  document.getElementById("GCNtable").innerHTML = table;
+}
+
+
+</script>
+
+</body>
+</html>
