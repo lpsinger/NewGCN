@@ -48,12 +48,38 @@ a:hover {
 	color:black;
 }
 
+
+.tt {
+  position: relative;
+  display: inline-block;
+}
+
 div:hover{
 	text-decoration: none;
 	color:black;
 	cursor: pointer;
 }
 
+.tt .tooltiptext {
+  visibility: hidden;
+  width: max-content;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 10px;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -20px;
+}
+
+.tt:hover .tooltiptext {
+  visibility: visible;
+}
 /* ------------------------------------ */
 h1,h2,h3,h4,h5,h6 {margin: 0px;}
 
