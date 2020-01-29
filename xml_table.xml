@@ -43,6 +43,7 @@
         <Inst>
           <Tel link="/gcn3/26734" obs="on">LIGO/Virgo</Tel>
           <Tel link="/gcn3/26761" obs="off">CALET/CGBM</Tel>
+          <Tel link="/gcn3/26738" obs="off">MAXI/GSC</Tel>
         </Inst>
         <MW>
           <Band obs="off">radio</Band>
