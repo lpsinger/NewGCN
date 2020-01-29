@@ -60,6 +60,35 @@
       </Src2>
     </Year20>
   </Transient>
+  <!--GRB 200114A-->
+  <Transient>
+    <Year20>
+      <Src1>
+        <Event link="/other/200114A">GRB 200114A</Event>
+        <T0 link="/gcn3/26735" reporter="Fermi/GBM">2020-01-14 03:40:43</T0>
+        <RA hms="13:17:36.00" link="/gcn3/26735" reporter="Fermi/GBM" units="deg">199.4</RA>
+        <DEC dms="-0:18:0.00" link="/gcn3/26735" reporter="Fermi/GBM" units="deg">-0.3</DEC>
+        <Error link="/gcn3/26735" reporter="Fermi/GBM" units="deg">2.60 &amp;deg;</Error>
+        <Redshift> </Redshift>
+        <Inst>
+          <Tel link="/gcn3/26735" obs="on">Fermi/GBM</Tel>
+        </Inst>
+        <MW>
+          <Band obs="off">radio</Band>
+          <Band obs="off">optical</Band>
+          <Band obs="off">X-ray</Band>
+          <Band obs="3">&amp;gamma;-ray</Band>
+          <Band obs="off">HE</Band>
+          <Band obs="off">VHE</Band>
+        </MW>
+        <MM>
+          <Mgr obs="on">EM</Mgr>
+          <Mgr obs="off">GW</Mgr>
+          <Mgr obs="off">&amp;nu;</Mgr>
+        </MM>
+      </Src1>
+    </Year20>
+  </Transient>
   <!--S 200112r-->
   <Transient>
     <Year20>
