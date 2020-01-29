@@ -12,6 +12,7 @@
         <Redshift error="0.020097829978122365" link="/gcn3/26759" reporter="LIGO/Virgo">0.0710</Redshift>
         <Inst>
           <Tel link="/gcn3/26759" obs="on">LIGO/Virgo</Tel>
+          <Tel link="/gcn3/26760" obs="off">MAXI/GSC</Tel>
         </Inst>
         <MW>
           <Band obs="off">radio</Band>
