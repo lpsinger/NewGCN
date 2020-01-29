@@ -200,7 +200,7 @@ function makeTable(xml, year, src) {
 document.getElementById("GCNtable").innerHTML = table;
 }
 
-function copyInfo(myInput, addText) {
+function copyInfo(myInput, text) {
   /* Get the text field */
   document.addEventListener('copy', function(e){
   e.clipboardData.setData('text/plain', text);
