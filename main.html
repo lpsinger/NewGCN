@@ -95,7 +95,7 @@ function loadXMLDoc(year, src) {
       makeTable(this, year, src);
     }
   };
-  xmlhttp.open("GET", "xml_table.xml?modified="<? filemtime("xml_table.xml")?>, true);
+  xmlhttp.open("GET", "xml_table.xml?modified=?<?php echo filemtime('xml_table.xml') ?>", true);
   xmlhttp.send();
 }
 
