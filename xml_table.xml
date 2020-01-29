@@ -35,12 +35,13 @@
     <Year20>
       <Src2>
         <Event link="/other/S200114f">S 200114f</Event>
-        <T0 link="/gcn3/26761" reporter="CALET/CGBM">2020-01-14</T0>
+        <T0 link="/gcn3/26734" reporter="LIGO/Virgo">2020-01-14 02:08:18.239</T0>
         <RA> </RA>
         <DEC> </DEC>
         <Error> </Error>
         <Redshift> </Redshift>
         <Inst>
+          <Tel link="/gcn3/26734" obs="on">LIGO/Virgo</Tel>
           <Tel link="/gcn3/26761" obs="off">CALET/CGBM</Tel>
         </Inst>
         <MW>
@@ -53,7 +54,7 @@
         </MW>
         <MM>
           <Mgr obs="off">EM</Mgr>
-          <Mgr obs="off">GW</Mgr>
+          <Mgr obs="on">GW</Mgr>
           <Mgr obs="off">&amp;nu;</Mgr>
         </MM>
       </Src2>
