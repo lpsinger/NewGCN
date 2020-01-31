@@ -1,5 +1,34 @@
 <?xml version="1.0" ?>
 <table>
+  <!--GRB 200130B-->
+  <Transient>
+    <Year20>
+      <Src1>
+        <Event link="/other/200130B">GRB 200130B</Event>
+        <T0 link="/gcn3/26950" reporter="Konus/Wind">2020-01-30 09:59:59.282</T0>
+        <RA> </RA>
+        <DEC> </DEC>
+        <Error> </Error>
+        <Redshift> </Redshift>
+        <Inst>
+          <Tel link="/gcn3/26950" obs="on">Konus/Wind</Tel>
+        </Inst>
+        <MW>
+          <Band obs="off">radio</Band>
+          <Band obs="off">optical</Band>
+          <Band obs="2">X-ray</Band>
+          <Band obs="off">&amp;gamma;-ray</Band>
+          <Band obs="off">HE</Band>
+          <Band obs="off">VHE</Band>
+        </MW>
+        <MM>
+          <Mgr obs="on">EM</Mgr>
+          <Mgr obs="off">GW</Mgr>
+          <Mgr obs="off">&amp;nu;</Mgr>
+        </MM>
+      </Src1>
+    </Year20>
+  </Transient>
   <!--S 200115j-->
   <Transient>
     <Year20>
