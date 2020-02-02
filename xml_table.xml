@@ -1,5 +1,73 @@
 <?xml version="1.0" ?>
 <table>
+<<<<<<< HEAD
+  <!--GRB 200201A-->
+  <Transient>
+    <Year20>
+      <Src1>
+        <Event link="/other/200201A">GRB 200201A</Event>
+        <T0 link="/gcn3/26955" reporter="Fermi/GBM">2020-02-01 00:57:20</T0>
+        <RA hms="19:10:48.00" link="/gcn3/26955" reporter="Fermi/GBM" units="deg">287.7</RA>
+        <DEC dms="-11:0:0.00" link="/gcn3/26955" reporter="Fermi/GBM" units="deg">-11.0</DEC>
+        <Error link="/gcn3/26955" reporter="Fermi/GBM" units="deg">6.70 &amp;deg;</Error>
+        <Redshift> </Redshift>
+        <Inst>
+          <Tel link="/gcn3/26955" obs="on">Fermi/GBM</Tel>
+        </Inst>
+        <MW>
+          <Band obs="off">radio</Band>
+          <Band obs="off">optical</Band>
+          <Band obs="off">X-ray</Band>
+          <Band obs="3">&amp;gamma;-ray</Band>
+          <Band obs="off">HE</Band>
+          <Band obs="off">VHE</Band>
+        </MW>
+        <MM>
+          <Mgr obs="on">EM</Mgr>
+          <Mgr obs="off">GW</Mgr>
+          <Mgr obs="off">&amp;nu;</Mgr>
+        </MM>
+      </Src1>
+    </Year20>
+  </Transient>
+  <!--GRB 200131A-->
+  <Transient>
+    <Year20>
+      <Src1>
+        <Event link="/other/200131A">GRB 200131A</Event>
+        <T0 link="/gcn3/26953" reporter="Swift/BAT">2020-01-31 22:41:15</T0>
+        <RA hms="00:12:22.57" link="/gcn3/26962" reporter="Swift/UVOT" units="deg">3.094</RA>
+        <DEC dms="+51:07:00.3" link="/gcn3/26962" reporter="Swift/UVOT" units="deg">51.117</DEC>
+        <Error link="/gcn3/26962" reporter="Swift/UVOT" units="arcmin">0.42 &quot;</Error>
+        <Redshift> </Redshift>
+        <Inst>
+          <Tel link="/gcn3/26959" obs="on">LCO</Tel>
+          <Tel link="/gcn3/26954" obs="on">MASTER</Tel>
+          <Tel link="/gcn3/26957" obs="on">RATIR</Tel>
+          <Tel link="/gcn3/26953" obs="on">Swift/BAT</Tel>
+          <Tel link="/gcn3/26962" obs="on">Swift/UVOT</Tel>
+          <Tel link="/gcn3/26961" obs="on">Swift/XRT</Tel>
+          <Tel link="/gcn3/26960" obs="on">VIRT</Tel>
+          <Tel link="/gcn3/26958" obs="off">KAIT</Tel>
+        </Inst>
+        <MW>
+          <Band obs="off">radio</Band>
+          <Band obs="1">optical</Band>
+          <Band obs="2">X-ray</Band>
+          <Band obs="3">&amp;gamma;-ray</Band>
+          <Band obs="off">HE</Band>
+          <Band obs="off">VHE</Band>
+        </MW>
+        <MM>
+          <Mgr obs="on">EM</Mgr>
+          <Mgr obs="off">GW</Mgr>
+          <Mgr obs="off">&amp;nu;</Mgr>
+        </MM>
+      </Src1>
+    </Year20>
+  </Transient>
+=======
+>>>>>>> 127fe131f5e42b1a81002aa665bcc4717cb4b888
   <!--GRB 200130B-->
   <Transient>
     <Year20>
