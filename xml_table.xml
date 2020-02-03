@@ -65,8 +65,6 @@
       </Src1>
     </Year20>
   </Transient>
-=======
->>>>>>> 127fe131f5e42b1a81002aa665bcc4717cb4b888
   <!--GRB 200130B-->
   <Transient>
     <Year20>
@@ -222,13 +220,14 @@
     <Year19>
       <Src3>
         <Event link="/other/icecube_190124A">IC 190124A</Event>
-        <T0 link="/gcn3/23785" reporter="IceCube">2019-01-24 03:43:54.79</T0>
+        <T0 link="/gcn3/23794" reporter="IceCube">2019-01-23 03:43:54.79</T0>
         <RA hms="20:29:36.00" link="/gcn3/23785" reporter="IceCube" units="deg">307.4</RA>
         <DEC dms="-32:10:48.00" link="/gcn3/23785" reporter="IceCube" units="deg">-32.18</DEC>
         <Error link="/gcn3/23785" reporter="IceCube" units="deg">0.90 &amp;deg;</Error>
         <Redshift> </Redshift>
         <Inst>
-          <Tel link="/gcn3/23785" obs="on">IceCube</Tel>
+          <Tel link="/gcn3/23794" obs="on">IceCube</Tel>
+          <Tel link="/gcn3/23793" obs="off">ANTARES</Tel>
           <Tel link="/gcn3/23790" obs="off">Fermi/LAT</Tel>
         </Inst>
         <MW>
@@ -388,6 +387,7 @@
         <Redshift> </Redshift>
         <Inst>
           <Tel link="/gcn3/23752" obs="on">AGILE/MCAL</Tel>
+          <Tel link="/gcn3/23792" obs="on">AstroSat/CZTI</Tel>
           <Tel link="/gcn3/23759" obs="on">Insight-HXMT/HE</Tel>
           <Tel link="/gcn3/23782" obs="on">Konus/Wind</Tel>
         </Inst>
@@ -428,7 +428,7 @@
           <Tel link="/gcn3/23762" obs="on">GMRT</Tel>
           <Tel link="/gcn3/23702" obs="on">GROND</Tel>
           <Tel link="/gcn3/23708" obs="on">GTC</Tel>
-          <Tel link="/gcn3/23742" obs="on">HCT</Tel>
+          <Tel link="/gcn3/23798" obs="on">HCT</Tel>
           <Tel link="/gcn3/23714" obs="on">INTEGRAL/SPI</Tel>
           <Tel link="/gcn3/23716" obs="on">Insight-HXMT/HE</Tel>
           <Tel link="/gcn3/23734" obs="on">KMTNet</Tel>
