@@ -63,12 +63,13 @@
     <Year20>
       <Src1>
         <Event link="/other/200131A">GRB 200131A</Event>
-        <T0 link="/gcn3/26953" reporter="Swift/BAT">2020-01-31 22:41:15</T0>
+        <T0 link="/gcn3/26972" reporter="CALET/CGBM">2020-01-31 22:41:11.299</T0>
         <RA hms="00:12:22.57" link="/gcn3/26962" reporter="Swift/UVOT" units="deg">3.094</RA>
         <DEC dms="+51:07:00.3" link="/gcn3/26962" reporter="Swift/UVOT" units="deg">51.117</DEC>
         <Error link="/gcn3/26962" reporter="Swift/UVOT" units="arcmin">0.42 &quot;</Error>
         <Redshift> </Redshift>
         <Inst>
+          <Tel link="/gcn3/26972" obs="on">CALET/CGBM</Tel>
           <Tel link="/gcn3/26959" obs="on">LCO</Tel>
           <Tel link="/gcn3/26954" obs="on">MASTER</Tel>
           <Tel link="/gcn3/26957" obs="on">RATIR</Tel>
