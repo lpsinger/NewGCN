@@ -70,6 +70,7 @@
         <Redshift> </Redshift>
         <Inst>
           <Tel link="/gcn3/26972" obs="on">CALET/CGBM</Tel>
+          <Tel link="/gcn3/26975" obs="on">Konus/Wind</Tel>
           <Tel link="/gcn3/26959" obs="on">LCO</Tel>
           <Tel link="/gcn3/26954" obs="on">MASTER</Tel>
           <Tel link="/gcn3/26957" obs="on">RATIR</Tel>
