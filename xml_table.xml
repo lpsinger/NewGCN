@@ -134,7 +134,7 @@
         <Error> </Error>
         <Redshift error="0.1" link="/gcn3/26966" reporter="ZTF">2.9000</Redshift>
         <Inst>
-          <Tel link="/gcn3/26966" obs="on">ZTF</Tel>
+          <Tel link="/gcn3/26970" obs="on">ZTF</Tel>
         </Inst>
         <MW>
           <Band obs="off">radio</Band>
