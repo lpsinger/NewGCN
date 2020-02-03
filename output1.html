@@ -1,0 +1,388 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>
+   New GCN
+  </title>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <!--===============================================================================================-->
+  <link href="{% static 'testapp/images/icons/favicon.ico' %}" rel="icon" type="image/png"/>
+  <!--===============================================================================================-->
+  <link href="{% static 'testapp/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css"/>
+  <!--===============================================================================================-->
+  <link href="{% static 'testapp/fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css"/>
+  <!--===============================================================================================-->
+  <link href="{% static 'testapp/vendor/animate/animate.css' %}" rel="stylesheet" type="text/css"/>
+  <!--===============================================================================================-->
+  <link href="{% static 'testapp/vendor/select2/select2.min.css' %}" rel="stylesheet" type="text/css"/>
+  <!--===============================================================================================-->
+  <link href="{% static 'testapp/vendor/perfect-scrollbar/perfect-scrollbar.css' %}" rel="stylesheet" type="text/css"/>
+  <!--===============================================================================================-->
+  <link href="{% static 'testapp/css/util.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{% static 'testapp/css/main.css' %}" rel="stylesheet" type="text/css"/>
+  <body>
+   <div class="limiter">
+    <div class="container-table100">
+     <div class="wrap-table100">
+      <div class="table100 ver4 m-b-110">
+       <div class="table100-head">
+        <table>
+         <thead>
+          <tr class="row100 head">
+           <th class="cell100 evt">
+            Event Name
+           </th>
+           <th class="cell100 t0">
+            Trigger Time
+           </th>
+           <th class="cell100 ra">
+            R.A.
+           </th>
+           <th class="cell100 dec">
+            Dec.
+           </th>
+           <th class="cell100 z">
+            Redshift
+           </th>
+           <th class="cell100 tel">
+            Telescopes/observatories
+           </th>
+           <th class="cell100 mw">
+            Wavelength
+           </th>
+           <th class="cell100 mm">
+            Messenger
+           </th>
+          </tr>
+         </thead>
+        </table>
+       </div>
+       <div class="table100-body js-pscroll">
+        <table class="GRBlist">
+         <tbody>
+          <!--newevt-->
+          <tr class="row100 body S191110af">
+           <td class="cell100 evt">
+            S191110af
+           </td>
+           <td class="cell100 t0">
+            10 Nov 2019 23:06:44
+           </td>
+           <td class="cell100 ra">
+           </td>
+           <td class="cell100 dec">
+           </td>
+           <td class="cell100 z">
+           </td>
+           <td class="cell100 tel">
+            <div class="box_tel_on">
+             LIGO/Virgo
+            </div>
+            <div class="box_tel_off">
+             INTEGRAL
+            </div>
+           </td>
+           <td class="cell100 mw">
+            <div class="box_off">
+             radio
+            </div>
+            <div class="box_off">
+             optical
+            </div>
+            <div class="box_off">
+             X-ray
+            </div>
+            <div class="box_off">
+             γ-ray
+            </div>
+            <div class="box_off">
+             HE
+            </div>
+            <div class="box_off">
+             VHE
+            </div>
+            <td class="cell100 mm">
+             <div class="box_off">
+              EM
+             </div>
+             <div class="box_on">
+              GW
+             </div>
+             <div class="box_off">
+              ν
+             </div>
+            </td>
+           </td>
+          </tr>
+          <tr class="row100 body GRB 191111B">
+           <td class="cell100 evt">
+            GRB 191111B
+           </td>
+           <td class="cell100 t0">
+            11 Nov 2019 13:07:10
+           </td>
+           <td class="cell100 ra">
+            239.4
+           </td>
+           <td class="cell100 dec">
+            -70.4
+           </td>
+           <td class="cell100 z">
+           </td>
+           <td class="cell100 tel">
+            <div class="box_tel_on">
+             Fermi/GBM
+            </div>
+           </td>
+           <td class="cell100 mw">
+            <div class="box_off">
+             radio
+            </div>
+            <div class="box_off">
+             optical
+            </div>
+            <div class="box_off">
+             X-ray
+            </div>
+            <div class="box_g_on">
+             γ-ray
+            </div>
+            <div class="box_off">
+             HE
+            </div>
+            <div class="box_off">
+             VHE
+            </div>
+            <td class="cell100 mm">
+             <div class="box_on">
+              EM
+             </div>
+             <div class="box_off">
+              GW
+             </div>
+             <div class="box_off">
+              ν
+             </div>
+            </td>
+           </td>
+          </tr>
+          <tr class="row100 body GRB 191112A">
+           <td class="cell100 evt">
+            GRB 191112A
+           </td>
+           <td class="cell100 t0">
+            12 Nov 2019 08:51:18
+           </td>
+           <td class="cell100 ra">
+            164.4
+           </td>
+           <td class="cell100 dec">
+            -72.3
+           </td>
+           <td class="cell100 z">
+           </td>
+           <td class="cell100 tel">
+            <div class="box_tel_on">
+             Fermi/GBM
+            </div>
+           </td>
+           <td class="cell100 mw">
+            <div class="box_off">
+             radio
+            </div>
+            <div class="box_off">
+             optical
+            </div>
+            <div class="box_off">
+             X-ray
+            </div>
+            <div class="box_g_on">
+             γ-ray
+            </div>
+            <div class="box_off">
+             HE
+            </div>
+            <div class="box_off">
+             VHE
+            </div>
+            <td class="cell100 mm">
+             <div class="box_on">
+              EM
+             </div>
+             <div class="box_off">
+              GW
+             </div>
+             <div class="box_off">
+              ν
+             </div>
+            </td>
+           </td>
+          </tr>
+          <tr class="row100 body GRB 190114C">
+           <td class="cell100 evt">
+            GRB 190114C
+           </td>
+           <td class="cell100 t0">
+            19 Jan 2019 20:57:03
+           </td>
+           <td class="cell100 ra">
+            54.5042
+           </td>
+           <td class="cell100 dec">
+            -26.9383
+           </td>
+           <td class="cell100 z">
+            0.4245
+           </td>
+           <td class="cell100 tel">
+            <div class="box_tel_on">
+             MAGIC
+            </div>
+            <div class="box_tel_on">
+             Fermi/GBM
+            </div>
+            <div class="box_tel_on">
+             Fermi/LAT
+            </div>
+            <div class="box_tel_on">
+             Swift/BAT
+            </div>
+            <div class="box_tel_on">
+             Swift/XRT
+            </div>
+            <div class="box_tel_on">
+             ......
+            </div>
+           </td>
+           <td class="cell100 mw">
+            <div class="box_r_on">
+             radio
+            </div>
+            <div class="box_o_on">
+             optical
+            </div>
+            <div class="box_x_on">
+             X-ray
+            </div>
+            <div class="box_g_on">
+             γ-ray
+            </div>
+            <div class="box_he_on">
+             HE
+            </div>
+            <div class="box_vhe_on">
+             VHE
+            </div>
+           </td>
+           <td class="cell100 mm">
+            <div class="box_on">
+             EM
+            </div>
+            <div class="box_off">
+             GW
+            </div>
+            <div class="box_off">
+             ν
+            </div>
+           </td>
+          </tr>
+          <tr class="row100 body G298048">
+           <td class="cell100 evt">
+            G298048
+           </td>
+           <td class="cell100 t0">
+            17 Aug 2017 12:41:04
+           </td>
+           <td class="cell100 ra">
+            197.450
+           </td>
+           <td class="cell100 dec">
+            -23.381
+           </td>
+           <td class="cell100 z">
+            0.0099
+           </td>
+           <td class="cell100 tel">
+            <div class="box_tel_on">
+             LIGO
+            </div>
+            <div class="box_tel_on">
+             Fermi/GBM
+            </div>
+            <div class="box_tel_on">
+             INTEGRAL
+            </div>
+            <div class="box_tel_on">
+             ......
+            </div>
+           </td>
+           <td class="cell100 mw">
+            <div class="box_r_on">
+             radio
+            </div>
+            <div class="box_o_on">
+             optical
+            </div>
+            <div class="box_x_on">
+             X-ray
+            </div>
+            <div class="box_g_on">
+             γ-ray
+            </div>
+            <div class="box_off">
+             HE
+            </div>
+            <div class="box_off">
+             VHE
+            </div>
+           </td>
+           <td class="cell100 mm">
+            <div class="box_on">
+             EM
+            </div>
+            <div class="box_on">
+             GW
+            </div>
+            <div class="box_off">
+             ν
+            </div>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <!--===============================================================================================-->
+   <script src="{% static 'vendor/jquery/jquery-3.2.1.min.js' %}">
+   </script>
+   <!--===============================================================================================-->
+   <script src="{% static 'vendor/bootstrap/js/popper.js' %}">
+   </script>
+   <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}">
+   </script>
+   <!--===============================================================================================-->
+   <script src="{% static 'vendor/select2/select2.min.js' %}">
+   </script>
+   <!--===============================================================================================-->
+   <script src="{% static 'vendor/perfect-scrollbar/perfect-scrollbar.min.js' %}">
+   </script>
+   <script>
+    $('.js-pscroll').each(function(){
+			var ps = new PerfectScrollbar(this);
+
+			$(window).on('resize', function(){
+				ps.update();
+			})
+		});
+   </script>
+   <!--===============================================================================================-->
+   <script src="{% static 'js/main.js' %}">
+   </script>
+  </body>
+ </head>
+</html>
