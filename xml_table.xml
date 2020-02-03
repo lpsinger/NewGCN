@@ -43,7 +43,7 @@
           <Tel link="/gcn3/26959" obs="on">LCO</Tel>
           <Tel link="/gcn3/26954" obs="on">MASTER</Tel>
           <Tel link="/gcn3/26957" obs="on">RATIR</Tel>
-          <Tel link="/gcn3/26953" obs="on">Swift/BAT</Tel>
+          <Tel link="/gcn3/26967" obs="on">Swift/BAT</Tel>
           <Tel link="/gcn3/26962" obs="on">Swift/UVOT</Tel>
           <Tel link="/gcn3/26961" obs="on">Swift/XRT</Tel>
           <Tel link="/gcn3/26960" obs="on">VIRT</Tel>
