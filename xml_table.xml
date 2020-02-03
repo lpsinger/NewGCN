@@ -94,6 +94,35 @@
       </Src1>
     </Year20>
   </Transient>
+  <!--GRB 200128A-->
+  <Transient>
+    <Year20>
+      <Src1>
+        <Event link="/other/200128A">GRB 200128A</Event>
+        <T0 link="/gcn3/26966" reporter="ZTF">2020-01-28</T0>
+        <RA> </RA>
+        <DEC> </DEC>
+        <Error> </Error>
+        <Redshift error="0.1" link="/gcn3/26966" reporter="ZTF">2.9000</Redshift>
+        <Inst>
+          <Tel link="/gcn3/26966" obs="on">ZTF</Tel>
+        </Inst>
+        <MW>
+          <Band obs="off">radio</Band>
+          <Band obs="1">optical</Band>
+          <Band obs="off">X-ray</Band>
+          <Band obs="off">&amp;gamma;-ray</Band>
+          <Band obs="off">HE</Band>
+          <Band obs="off">VHE</Band>
+        </MW>
+        <MM>
+          <Mgr obs="on">EM</Mgr>
+          <Mgr obs="off">GW</Mgr>
+          <Mgr obs="off">&amp;nu;</Mgr>
+        </MM>
+      </Src1>
+    </Year20>
+  </Transient>
   <!--S 200115j-->
   <Transient>
     <Year20>
