@@ -1,5 +1,159 @@
 <?xml version="1.0" ?>
 <table>
+  <!--GRB 200203A-->
+  <Transient>
+    <Year20>
+      <Src1>
+        <Event link="/other/200203A">GRB 200203A</Event>
+        <T0 link="/gcn3/26969" reporter="Fermi/GBM">2020-02-03 03:44:03</T0>
+        <RA hms="18:14:48.00" link="/gcn3/26969" reporter="Fermi/GBM" units="deg">273.7</RA>
+        <DEC dms="3:12:0.00" link="/gcn3/26969" reporter="Fermi/GBM" units="deg">3.2</DEC>
+        <Error link="/gcn3/26969" reporter="Fermi/GBM" units="deg">24.00 &amp;deg;</Error>
+        <Redshift> </Redshift>
+        <Inst>
+          <Tel link="/gcn3/26969" obs="on">Fermi/GBM</Tel>
+        </Inst>
+        <MW>
+          <Band obs="off">radio</Band>
+          <Band obs="off">optical</Band>
+          <Band obs="off">X-ray</Band>
+          <Band obs="3">&amp;gamma;-ray</Band>
+          <Band obs="off">HE</Band>
+          <Band obs="off">VHE</Band>
+        </MW>
+        <MM>
+          <Mgr obs="on">EM</Mgr>
+          <Mgr obs="off">GW</Mgr>
+          <Mgr obs="off">&amp;nu;</Mgr>
+        </MM>
+      </Src1>
+    </Year20>
+  </Transient>
+  <!--GRB 200201A-->
+  <Transient>
+    <Year20>
+      <Src1>
+        <Event link="/other/200201A">GRB 200201A</Event>
+        <T0 link="/gcn3/26955" reporter="Fermi/GBM">2020-02-01 00:57:20</T0>
+        <RA hms="19:10:48.00" link="/gcn3/26955" reporter="Fermi/GBM" units="deg">287.7</RA>
+        <DEC dms="-11:0:0.00" link="/gcn3/26955" reporter="Fermi/GBM" units="deg">-11.0</DEC>
+        <Error link="/gcn3/26955" reporter="Fermi/GBM" units="deg">6.70 &amp;deg;</Error>
+        <Redshift> </Redshift>
+        <Inst>
+          <Tel link="/gcn3/26955" obs="on">Fermi/GBM</Tel>
+        </Inst>
+        <MW>
+          <Band obs="off">radio</Band>
+          <Band obs="off">optical</Band>
+          <Band obs="off">X-ray</Band>
+          <Band obs="3">&amp;gamma;-ray</Band>
+          <Band obs="off">HE</Band>
+          <Band obs="off">VHE</Band>
+        </MW>
+        <MM>
+          <Mgr obs="on">EM</Mgr>
+          <Mgr obs="off">GW</Mgr>
+          <Mgr obs="off">&amp;nu;</Mgr>
+        </MM>
+      </Src1>
+    </Year20>
+  </Transient>
+  <!--GRB 200131A-->
+  <Transient>
+    <Year20>
+      <Src1>
+        <Event link="/other/200131A">GRB 200131A</Event>
+        <T0 link="/gcn3/26972" reporter="CALET/CGBM">2020-01-31 22:41:11.299</T0>
+        <RA hms="00:12:22.57" link="/gcn3/26962" reporter="Swift/UVOT" units="deg">3.094</RA>
+        <DEC dms="+51:07:00.3" link="/gcn3/26962" reporter="Swift/UVOT" units="deg">51.117</DEC>
+        <Error link="/gcn3/26962" reporter="Swift/UVOT" units="arcmin">0.42 &quot;</Error>
+        <Redshift> </Redshift>
+        <Inst>
+          <Tel link="/gcn3/26972" obs="on">CALET/CGBM</Tel>
+          <Tel link="/gcn3/26975" obs="on">Konus/Wind</Tel>
+          <Tel link="/gcn3/26959" obs="on">LCO</Tel>
+          <Tel link="/gcn3/26954" obs="on">MASTER</Tel>
+          <Tel link="/gcn3/26957" obs="on">RATIR</Tel>
+          <Tel link="/gcn3/26967" obs="on">Swift/BAT</Tel>
+          <Tel link="/gcn3/26962" obs="on">Swift/UVOT</Tel>
+          <Tel link="/gcn3/26961" obs="on">Swift/XRT</Tel>
+          <Tel link="/gcn3/26960" obs="on">VIRT</Tel>
+          <Tel link="/gcn3/26958" obs="off">KAIT</Tel>
+        </Inst>
+        <MW>
+          <Band obs="off">radio</Band>
+          <Band obs="1">optical</Band>
+          <Band obs="2">X-ray</Band>
+          <Band obs="3">&amp;gamma;-ray</Band>
+          <Band obs="off">HE</Band>
+          <Band obs="off">VHE</Band>
+        </MW>
+        <MM>
+          <Mgr obs="on">EM</Mgr>
+          <Mgr obs="off">GW</Mgr>
+          <Mgr obs="off">&amp;nu;</Mgr>
+        </MM>
+      </Src1>
+    </Year20>
+  </Transient>
+  <!--GRB 200130B-->
+  <Transient>
+    <Year20>
+      <Src1>
+        <Event link="/other/200130B">GRB 200130B</Event>
+        <T0 link="/gcn3/26950" reporter="Konus/Wind">2020-01-30 09:59:59.282</T0>
+        <RA> </RA>
+        <DEC> </DEC>
+        <Error> </Error>
+        <Redshift> </Redshift>
+        <Inst>
+          <Tel link="/gcn3/26950" obs="on">Konus/Wind</Tel>
+        </Inst>
+        <MW>
+          <Band obs="off">radio</Band>
+          <Band obs="off">optical</Band>
+          <Band obs="2">X-ray</Band>
+          <Band obs="off">&amp;gamma;-ray</Band>
+          <Band obs="off">HE</Band>
+          <Band obs="off">VHE</Band>
+        </MW>
+        <MM>
+          <Mgr obs="on">EM</Mgr>
+          <Mgr obs="off">GW</Mgr>
+          <Mgr obs="off">&amp;nu;</Mgr>
+        </MM>
+      </Src1>
+    </Year20>
+  </Transient>
+  <!--GRB 200128A-->
+  <Transient>
+    <Year20>
+      <Src1>
+        <Event link="/other/200128A">GRB 200128A</Event>
+        <T0 link="/gcn3/26966" reporter="ZTF">2020-01-28</T0>
+        <RA> </RA>
+        <DEC> </DEC>
+        <Error> </Error>
+        <Redshift error="0.1" link="/gcn3/26966" reporter="ZTF">2.9000</Redshift>
+        <Inst>
+          <Tel link="/gcn3/26970" obs="on">ZTF</Tel>
+        </Inst>
+        <MW>
+          <Band obs="off">radio</Band>
+          <Band obs="1">optical</Band>
+          <Band obs="off">X-ray</Band>
+          <Band obs="off">&amp;gamma;-ray</Band>
+          <Band obs="off">HE</Band>
+          <Band obs="off">VHE</Band>
+        </MW>
+        <MM>
+          <Mgr obs="on">EM</Mgr>
+          <Mgr obs="off">GW</Mgr>
+          <Mgr obs="off">&amp;nu;</Mgr>
+        </MM>
+      </Src1>
+    </Year20>
+  </Transient>
   <!--S 200115j-->
   <Transient>
     <Year20>
@@ -30,18 +184,21 @@
       </Src2>
     </Year20>
   </Transient>
-  <!--S 200112r-->
+  <!--S 200114f-->
   <Transient>
     <Year20>
       <Src2>
-        <Event link="/other/S200112r">S 200112r</Event>
-        <T0 link="/gcn3/26715" reporter="LIGO/Virgo">2020-01-12 15:58:38.094</T0>
+        <Event link="/other/S200114f">S 200114f</Event>
+        <T0 link="/gcn3/26734" reporter="LIGO/Virgo">2020-01-14 02:08:18.239</T0>
         <RA> </RA>
         <DEC> </DEC>
         <Error> </Error>
-        <Redshift error="0.05710059811425733" link="/gcn3/26715" reporter="LIGO/Virgo">0.2219</Redshift>
+        <Redshift> </Redshift>
         <Inst>
-          <Tel link="/gcn3/26715" obs="on">LIGO/Virgo</Tel>
+          <Tel link="/gcn3/26734" obs="on">LIGO/Virgo</Tel>
+          <Tel link="/gcn3/26761" obs="off">CALET/CGBM</Tel>
+          <Tel link="/gcn3/26739" obs="off">Fermi/GBM</Tel>
+          <Tel link="/gcn3/26738" obs="off">MAXI/GSC</Tel>
         </Inst>
         <MW>
           <Band obs="off">radio</Band>
@@ -59,24 +216,119 @@
       </Src2>
     </Year20>
   </Transient>
+  <!--GRB 200114A-->
+  <Transient>
+    <Year20>
+      <Src1>
+        <Event link="/other/200114A">GRB 200114A</Event>
+        <T0 link="/gcn3/26735" reporter="Fermi/GBM">2020-01-14 03:40:43</T0>
+        <RA hms="13:17:36.00" link="/gcn3/26735" reporter="Fermi/GBM" units="deg">199.4</RA>
+        <DEC dms="-0:18:0.00" link="/gcn3/26735" reporter="Fermi/GBM" units="deg">-0.3</DEC>
+        <Error link="/gcn3/26735" reporter="Fermi/GBM" units="deg">2.60 &amp;deg;</Error>
+        <Redshift> </Redshift>
+        <Inst>
+          <Tel link="/gcn3/26735" obs="on">Fermi/GBM</Tel>
+        </Inst>
+        <MW>
+          <Band obs="off">radio</Band>
+          <Band obs="off">optical</Band>
+          <Band obs="off">X-ray</Band>
+          <Band obs="3">&amp;gamma;-ray</Band>
+          <Band obs="off">HE</Band>
+          <Band obs="off">VHE</Band>
+        </MW>
+        <MM>
+          <Mgr obs="on">EM</Mgr>
+          <Mgr obs="off">GW</Mgr>
+          <Mgr obs="off">&amp;nu;</Mgr>
+        </MM>
+      </Src1>
+    </Year20>
+  </Transient>
+  <!--S 200112r-->
+  <Transient>
+    <Year20>
+      <Src2>
+        <Event link="/other/S200112r">S 200112r</Event>
+        <T0 link="/gcn3/26715" reporter="LIGO/Virgo">2020-01-12 15:58:38.094</T0>
+        <RA> </RA>
+        <DEC> </DEC>
+        <Error> </Error>
+        <Redshift error="0.05710059811425733" link="/gcn3/26715" reporter="LIGO/Virgo">0.2219</Redshift>
+        <Inst>
+          <Tel link="/gcn3/26715" obs="on">LIGO/Virgo</Tel>
+          <Tel link="/gcn3/26740" obs="off">CALET/CGBM</Tel>
+        </Inst>
+        <MW>
+          <Band obs="off">radio</Band>
+          <Band obs="off">optical</Band>
+          <Band obs="off">X-ray</Band>
+          <Band obs="off">&amp;gamma;-ray</Band>
+          <Band obs="off">HE</Band>
+          <Band obs="off">VHE</Band>
+        </MW>
+        <MM>
+          <Mgr obs="off">EM</Mgr>
+          <Mgr obs="on">GW</Mgr>
+          <Mgr obs="off">&amp;nu;</Mgr>
+        </MM>
+      </Src2>
+    </Year20>
+  </Transient>
+  <!--IC 190124A-->
+  <Transient>
+    <Year19>
+      <Src3>
+        <Event link="/other/icecube_190124A">IC 190124A</Event>
+        <T0 link="/gcn3/23794" reporter="IceCube">2019-01-23 03:43:54.79</T0>
+        <RA hms="20:29:36.00" link="/gcn3/23785" reporter="IceCube" units="deg">307.4</RA>
+        <DEC dms="-32:10:48.00" link="/gcn3/23785" reporter="IceCube" units="deg">-32.18</DEC>
+        <Error link="/gcn3/23785" reporter="IceCube" units="deg">0.90 &amp;deg;</Error>
+        <Redshift> </Redshift>
+        <Inst>
+          <Tel link="/gcn3/23794" obs="on">IceCube</Tel>
+          <Tel link="/gcn3/23793" obs="off">ANTARES</Tel>
+          <Tel link="/gcn3/23790" obs="off">Fermi/LAT</Tel>
+        </Inst>
+        <MW>
+          <Band obs="off">radio</Band>
+          <Band obs="off">optical</Band>
+          <Band obs="off">X-ray</Band>
+          <Band obs="off">&amp;gamma;-ray</Band>
+          <Band obs="off">HE</Band>
+          <Band obs="off">VHE</Band>
+        </MW>
+        <MM>
+          <Mgr obs="off">EM</Mgr>
+          <Mgr obs="off">GW</Mgr>
+          <Mgr obs="on">&amp;nu;</Mgr>
+        </MM>
+      </Src3>
+    </Year19>
+  </Transient>
   <!--GRB 190123A-->
   <Transient>
     <Year19>
       <Src1>
         <Event link="/other/190123A">GRB 190123A</Event>
-        <T0 link="/gcn3/23773" reporter="Fermi/GBM">2019-01-20 12:19:18.22</T0>
+        <T0 link="/gcn3/23769" reporter="Swift/BAT">2019-01-23 12:19:13</T0>
         <RA hms="03:32:52.94" link="/gcn3/23771" reporter="Swift/XRT" units="deg">53.221</RA>
         <DEC dms="+45:31:31.1" link="/gcn3/23771" reporter="Swift/XRT" units="deg">45.525</DEC>
         <Error link="/gcn3/23771" reporter="Swift/XRT" units="arcmin">2.30 &quot;</Error>
         <Redshift> </Redshift>
         <Inst>
           <Tel link="/gcn3/23773" obs="on">Fermi/GBM</Tel>
-          <Tel link="/gcn3/23769" obs="on">Swift/BAT</Tel>
+          <Tel link="/gcn3/23780" obs="on">Swift/BAT</Tel>
           <Tel link="/gcn3/23775" obs="on">Swift/XRT</Tel>
+          <Tel link="/gcn3/23786" obs="off">AROMA</Tel>
           <Tel link="/gcn3/23772" obs="off">BOOTES-4/MET</Tel>
+          <Tel link="/gcn3/23781" obs="off">COATLI</Tel>
+          <Tel link="/gcn3/23777" obs="off">GMG</Tel>
           <Tel link="/gcn3/23774" obs="off">GOTO</Tel>
           <Tel link="/gcn3/23770" obs="off">MASTER</Tel>
-          <Tel link="/gcn3/23769" obs="off">Swift/UVOT</Tel>
+          <Tel link="/gcn3/23778" obs="off">MITSuME</Tel>
+          <Tel link="/gcn3/23788" obs="off">NEXT</Tel>
+          <Tel link="/gcn3/23784" obs="off">Swift/UVOT</Tel>
         </Inst>
         <MW>
           <Band obs="off">radio</Band>
@@ -94,12 +346,41 @@
       </Src1>
     </Year19>
   </Transient>
+  <!--GRB 190122B-->
+  <Transient>
+    <Year19>
+      <Src1>
+        <Event link="/other/190122B">GRB 190122B</Event>
+        <T0 link="/gcn3/23791" reporter="AstroSat/CZTI">2019-01-22 16:57:02.5</T0>
+        <RA> </RA>
+        <DEC> </DEC>
+        <Error> </Error>
+        <Redshift> </Redshift>
+        <Inst>
+          <Tel link="/gcn3/23791" obs="on">AstroSat/CZTI</Tel>
+        </Inst>
+        <MW>
+          <Band obs="off">radio</Band>
+          <Band obs="off">optical</Band>
+          <Band obs="2">X-ray</Band>
+          <Band obs="off">&amp;gamma;-ray</Band>
+          <Band obs="off">HE</Band>
+          <Band obs="off">VHE</Band>
+        </MW>
+        <MM>
+          <Mgr obs="on">EM</Mgr>
+          <Mgr obs="off">GW</Mgr>
+          <Mgr obs="off">&amp;nu;</Mgr>
+        </MM>
+      </Src1>
+    </Year19>
+  </Transient>
   <!--GRB 190122A-->
   <Transient>
     <Year19>
       <Src1>
         <Event link="/other/190122A">GRB 190122A</Event>
-        <T0 link="/gcn3/23768" reporter="Fermi/GBM">2019-01-20 07:19:07.57</T0>
+        <T0 link="/gcn3/23783" reporter="Konus/Wind">2019-01-22 07:19:07.426</T0>
         <RA hms="17:14:50.40" link="/gcn3/23767" reporter="Fermi/LAT" units="deg">258.71</RA>
         <DEC dms="48:7:12.00" link="/gcn3/23767" reporter="Fermi/LAT" units="deg">48.12</DEC>
         <Error link="/gcn3/23767" reporter="Fermi/LAT" units="deg">0.91 &amp;deg;</Error>
@@ -107,13 +388,43 @@
         <Inst>
           <Tel link="/gcn3/23768" obs="on">Fermi/GBM</Tel>
           <Tel link="/gcn3/23767" obs="on">Fermi/LAT</Tel>
+          <Tel link="/gcn3/23783" obs="on">Konus/Wind</Tel>
+        </Inst>
+        <MW>
+          <Band obs="off">radio</Band>
+          <Band obs="off">optical</Band>
+          <Band obs="2">X-ray</Band>
+          <Band obs="3">&amp;gamma;-ray</Band>
+          <Band obs="4">HE</Band>
+          <Band obs="off">VHE</Band>
+        </MW>
+        <MM>
+          <Mgr obs="on">EM</Mgr>
+          <Mgr obs="off">GW</Mgr>
+          <Mgr obs="off">&amp;nu;</Mgr>
+        </MM>
+      </Src1>
+    </Year19>
+  </Transient>
+  <!--GRB 190121A-->
+  <Transient>
+    <Year19>
+      <Src1>
+        <Event link="/other/190121A">GRB 190121A</Event>
+        <T0 link="/gcn3/23779" reporter="CALET/CGBM">2019-01-21 12:55:17.284</T0>
+        <RA> </RA>
+        <DEC> </DEC>
+        <Error> </Error>
+        <Redshift> </Redshift>
+        <Inst>
+          <Tel link="/gcn3/23779" obs="on">CALET/CGBM</Tel>
         </Inst>
         <MW>
           <Band obs="off">radio</Band>
           <Band obs="off">optical</Band>
           <Band obs="off">X-ray</Band>
           <Band obs="3">&amp;gamma;-ray</Band>
-          <Band obs="4">HE</Band>
+          <Band obs="off">HE</Band>
           <Band obs="off">VHE</Band>
         </MW>
         <MM>
@@ -136,12 +447,14 @@
         <Redshift> </Redshift>
         <Inst>
           <Tel link="/gcn3/23752" obs="on">AGILE/MCAL</Tel>
+          <Tel link="/gcn3/23792" obs="on">AstroSat/CZTI</Tel>
           <Tel link="/gcn3/23759" obs="on">Insight-HXMT/HE</Tel>
+          <Tel link="/gcn3/23782" obs="on">Konus/Wind</Tel>
         </Inst>
         <MW>
           <Band obs="off">radio</Band>
           <Band obs="off">optical</Band>
-          <Band obs="off">X-ray</Band>
+          <Band obs="2">X-ray</Band>
           <Band obs="3">&amp;gamma;-ray</Band>
           <Band obs="off">HE</Band>
           <Band obs="off">VHE</Band>
@@ -168,14 +481,14 @@
           <Tel link="/gcn3/23712" obs="on">AGILE/MCAL</Tel>
           <Tel link="/gcn3/23728" obs="on">ALMA</Tel>
           <Tel link="/gcn3/23745" obs="on">ATCA</Tel>
-          <Tel link="/gcn3/23746" obs="on">CHILESCOPE</Tel>
+          <Tel link="/gcn3/23787" obs="on">CHILESCOPE</Tel>
           <Tel link="/gcn3/23749" obs="on">COATLI</Tel>
           <Tel link="/gcn3/23707" obs="on">Fermi/GBM</Tel>
           <Tel link="/gcn3/23709" obs="on">Fermi/LAT</Tel>
           <Tel link="/gcn3/23762" obs="on">GMRT</Tel>
           <Tel link="/gcn3/23702" obs="on">GROND</Tel>
           <Tel link="/gcn3/23708" obs="on">GTC</Tel>
-          <Tel link="/gcn3/23742" obs="on">HCT</Tel>
+          <Tel link="/gcn3/23798" obs="on">HCT</Tel>
           <Tel link="/gcn3/23714" obs="on">INTEGRAL/SPI</Tel>
           <Tel link="/gcn3/23716" obs="on">Insight-HXMT/HE</Tel>
           <Tel link="/gcn3/23734" obs="on">KMTNet</Tel>
@@ -419,6 +732,7 @@
           <Tel link="/gcn3/23616" obs="on">MASTER</Tel>
           <Tel link="/gcn3/23617" obs="on">MITSuME</Tel>
           <Tel link="/gcn3/23640" obs="on">Mondy</Tel>
+          <Tel link="/gcn3/23636" obs="on">NEXT</Tel>
           <Tel link="/gcn3/23628" obs="on">OASDG</Tel>
           <Tel link="/gcn3/23665" obs="on">OSN</Tel>
           <Tel link="/gcn3/23625" obs="on">Swift/BAT</Tel>
@@ -486,7 +800,7 @@
     <Year19>
       <Src1>
         <Event link="/other/190103B">GRB 190103B</Event>
-        <T0 link="/gcn3/23602" reporter="Swift/BAT">2019-01-03 21:03:51</T0>
+        <T0 link="/gcn3/23631" reporter="CALET/CGBM">2019-01-03 21:03:46.478</T0>
         <RA hms="14:10:16.63" link="/gcn3/23603" reporter="Swift/XRT" units="deg">212.569</RA>
         <DEC dms="+35:15:39.6" link="/gcn3/23603" reporter="Swift/XRT" units="deg">35.261</DEC>
         <Error link="/gcn3/23603" reporter="Swift/XRT" units="arcmin">1.70 &quot;</Error>
@@ -504,7 +818,7 @@
           <Band obs="off">optical</Band>
           <Band obs="2">X-ray</Band>
           <Band obs="3">&amp;gamma;-ray</Band>
-          <Band obs="4">HE</Band>
+          <Band obs="off">HE</Band>
           <Band obs="off">VHE</Band>
         </MW>
         <MM>
